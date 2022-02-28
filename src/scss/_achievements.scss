@@ -1,0 +1,57 @@
+.achievements {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 76px;
+    }
+    &__nav {
+        &_title {
+            font-size: 16px;
+            line-height: 110%;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $grey-3a;
+            & span {
+                margin-top: 7px;
+                display: block;
+                font-size: 12px;
+                line-height: 110%;
+                font-family: "AngleciaProDisplay";
+                text-transform: none;
+                letter-spacing: normal;
+            }
+        }
+    }
+    &__cards {
+        &_wrapper {
+            display: grid;
+            grid-template: 1fr / repeat(3, minmax(auto, 294px));
+            gap: 15px 30px;
+            & > .thank__slide_item {
+                padding-top: 4px;
+                & .thank__slide_plus {
+                    margin-top: 18px;
+                }
+            }
+            
+        }
+    }
+    &__card {
+        border: none !important;
+        // margin-bottom: 72px;
+        justify-content: flex-end;
+        &.thank__slide_item {
+            width: 100%;
+        }
+    }
+    &__slide {
+        &_frame-mini {
+            margin: auto 0;
+            height: auto;
+            background:url('../img/thank/1.png') top left no-repeat, url('../img/thank/2.png') top right no-repeat,
+            url('../img/thank/3.png') bottom left no-repeat, url('../img/thank/4.png') bottom right no-repeat;
+        }
+    }
+}

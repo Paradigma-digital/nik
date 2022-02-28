@@ -1,0 +1,126 @@
+@media (max-width: 1365px) {
+    .college {
+        &__promo {
+            max-width: 100%;
+            &>*,&>*>* {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        &__message {
+            & > .result__decor {
+                &::before {
+                    left: 8%;
+                }
+                &::after {
+                    right: 8%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+   .college {
+        &__message {
+            & > .result__decor {
+                &::before {
+                    left: 3%;
+                }
+                &::after {
+                    right: 3%;
+                }
+            }
+        }
+   }
+}
+
+@media (max-width: 992px) {
+    .college {
+        &__message {
+            & > .result__decor {
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            &_video {
+                width: 600px;
+                height: 360px;
+            }
+        }
+        &__photos{
+            &_slider {
+                height: 370px;
+                margin-top: 145px;
+                &_wrapper {
+                    width: 650px;
+                    height: 400px;
+                    left: calc(50% - 325px);
+                    & > .college__photos_slider_next,
+                    & > .college__photos_slider_prev {
+                        top: 200px;
+                    } 
+                }
+                & .divider,
+                &::after,
+                &::before {
+                    display: none;
+                }
+
+            }
+            &_slide {
+                height: 400px;
+            }
+            & .result__decor {
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        &__title {
+            margin-top: 26px;
+        }
+   }
+}
+
+@media (max-width: 768px) {
+    .college {
+        &__title {
+            font-size: 30px;
+            line-height: 120%;
+        }
+        &__message {
+            &_wrapper {
+                padding: 0 20px 30px;
+                width: calc(100% + 40px);
+                margin-left: -20px;
+            }
+        }
+        &__photos {
+            &_slider {
+                &_wrapper {
+                    width: 320px;
+                    left: calc(50% - 160px);
+                    height: 275px;
+                    & > .college__photos_slider_next,
+                    & > .college__photos_slider_prev {
+                        display: none;
+                    } 
+                }
+            }
+            &_slide {
+                width: 320px;
+                height: 211px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 540px) {
+
+}

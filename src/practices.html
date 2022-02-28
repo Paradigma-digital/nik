@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Практика"
+})
+<body>
+    @@include('html/header.html', {
+        "class" : "not-main"
+    })
+
+    <main class="page">
+        @@include('html/top.html', {
+            "src": "Практика",
+            "title": "Практика"
+        })
+        <section class="practice">
+            <div class="container">
+                <div class="clients__nav clients__nav-other practice__nav page__top-nav">
+                    <a href="#" class="clients__nav_link clients__nav_link-active">Все</a>
+                    <a href="#" class="clients__nav_link">Семейные дела</a>
+                    <a href="#" class="clients__nav_link">Судебные дела</a>
+                    <a href="#" class="clients__nav_link">Категория практики</a>
+                    <a href="#" class="clients__nav_link">Категория практики</a>
+                    <a href="#" class="clients__nav_link">Категория практики</a>
+                    <a href="#" class="clients__nav_link">Категория практики</a>
+                    <a href="#" class="clients__nav_link">Категория практики</a>
+                    <a href="#" class="clients__nav_link">Категория практики</a>
+                    <!-- <a href="#" class="clients__nav_link">Категория практики</a> -->
+
+                    <button class="top_arrow">   
+                        <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.85268 9.57143L1 1.2597M8.14732 9.31173L16 1" stroke="#9A211D"/>
+                        </svg>
+                    </button>
+                    
+                </div>
+                <span class="page__top-nav_divider"></span>
+                <div class="page__wrapper achievements__wrapper">
+                    <ul class="page__nav practice__left-nav"> 
+                        <button class="page__nav_arrow" >
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.85268 9.57143L1 1.2597M8.14732 9.31173L16 1" stroke="#9A211D"/>
+                            </svg>
+                        </button>
+                        <div class="achievements__nav_title">
+                            Выберите адвоката
+                            <span>Чтобы посмотреть его практику</span>
+                        </div>
+                        
+                        <li class="page__nav_item page__nav_item-active">
+                            <div class="page__nav_img">
+                                <img src="@img/team/nav/item-1.png" alt="photo">
+                                <span></span>
+                            </div>
+                            <div class="page__nav_persone">
+                                <p class="page__nav_name">
+                                    Юрий Николаевич
+                                    Николаев
+                                </p>
+                                <p class="page__nav_spec">
+                                    Специализация
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page__nav_item">
+                            <div class="page__nav_img">
+                                <img src="@img/team/nav/item-2.png" alt="photo">
+                                <span></span>
+                            </div>
+                            <div class="page__nav_persone">
+                                <p class="page__nav_name">
+                                    Юлия Николаевна Мясникова
+                                </p>
+                                <p class="page__nav_spec">
+                                    Специализация
+                                </p>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="page__nav_item">
+                            <div class="page__nav_img">
+                                <img src="@img/team/nav/item-3.png" alt="photo">
+                                <span></span>
+                            </div>
+                            <div class="page__nav_persone">
+                                <p class="page__nav_name">
+                                    Вадим Анатольевич Новиков
+                                </p>
+                                <p class="page__nav_spec">
+                                    Специализация
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page__nav_item">
+                            <div class="page__nav_img">
+                                <img src="@img/team/nav/item-4.png" alt="photo">
+                                <span></span>
+                            </div>
+                            <div class="page__nav_persone">
+                                <p class="page__nav_name">
+                                    Дмитрий Николаевич Удальцов
+                                </p>
+                                <p class="page__nav_spec">
+                                    Специализация
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page__nav_item">
+                            <div class="page__nav_img">
+                                <img src="@img/team/nav/item-5.png" alt="photo">
+                                <span></span>
+                            </div>
+                            <div class="page__nav_persone">
+                                <p class="page__nav_name">
+                                    Анна Николаевна Жучкова
+                                </p>
+                                <p class="page__nav_spec">
+                                    Специализация
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page__nav_item">
+                            <div class="page__nav_img">
+                                <img src="@img/team/nav/item-6.png" alt="photo">
+                                <span></span>
+                            </div>
+                            <div class="page__nav_persone">
+                                <p class="page__nav_name">
+                                    Сергей Павлович Епихин
+                                </p>
+                                <p class="page__nav_spec">
+                                    Специализация
+                                </p>
+                            </div>
+                        </li>
+                        <li class="page__nav_item">
+                            <div class="page__nav_img">
+                                <img src="@img/team/nav/item-5.png" alt="photo">
+                                <span></span>
+                            </div>
+                            <div class="page__nav_persone">
+                                <p class="page__nav_name">
+                                    Анна Николаевна Жучкова
+                                </p>
+                                <p class="page__nav_spec">
+                                    Специализация
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="practice__cards">
+                        <div class="practice__cards_wrapper">
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#" class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#" class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#" class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="practice__card">
+                                <div class="practice__card_content">
+                                    <h3 class="practice__card_title">
+                                        Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                    </h3>
+                                    <p class="practice__card_descr">
+                                        Решением Арбитражного суда Москвы по делу А40-233680/2018-159-1913 от 24.12.2018 в удовлетворении требований К. (далее по тексту Истец) о взыскании в пользу ООО «А» (далее по тексту Общество) с Б. (далее по тексту Ответчик) денежных...
+                                    </p>
+                                    <a href="#" class="btn_plus thank__slide_plus practice__card_btn">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                                <div class="practice__card_persone">
+                                    <div class="practice__card_photo">
+                                        <img src="@img/team/nav/item-1.png" alt="">
+                                    </div>
+                                    <div class="practice__card_persone_wrapp">
+                                        <p class="name">
+                                            Юрий Николаевич Николаев
+                                        </p>
+                                        <p class="spec">
+                                            Специализация
+                                        </p>
+                                        <p class="category">
+                                            Категория практики
+                                        </p>
+                                    </div>
+                                    <a href="#"  class="btn_plus thank__slide_plus practice__card_btn-mob">
+                                        <span>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                            </svg>
+                                        </span>
+                                        подробнее
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="page__bottom-nav">
+                            <a href="#"  class="btn btn_slider btn-nav">                    
+                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(0.701517 0.712652 -0.701517 0.712652 0.669189 9.11523)" stroke="white"/>
+                                    <path d="M0.79071 9.23719L8.99996 1.10303" stroke="white"/>
+                                </svg>
+                            </a>
+                            <div class="page__bottom-nav_links">
+                                <a href="#">1</a>
+                                <a href="#" class="active">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <span>...</span>
+                                <a href="#">12</a>
+                            </div>
+                            <a href="#" class="btn btn_slider btn-nav">
+                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(-0.701517 0.712652 0.701517 0.712652 9.33081 9.11523)" stroke="white"/>
+                                    <path d="M9.20929 9.23719L1.00004 1.10303" stroke="white"/>
+                                </svg>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+
+main.page {
+    background: #fff;
+    margin-top: 110px;
+}
+.page {
+    .top_arrow {
+        display: none;
+    }
+    &__title {
+        margin: 0 auto;
+        max-width: 90%;
+        margin-top: 8px;
+    }
+    &__top-nav  {
+        padding-bottom: 30px;
+        margin-top: -25px;
+        & > .clients__nav_link {
+            width: auto;
+            padding: 0px 26px;
+            margin: 0 5px;
+        }
+        &_divider {
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid $grey-ed;
+        }
+    }
+    &__bottom-nav {
+        width: 100%;
+        padding: 50px 0 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_links {
+            font-size: 20px;
+            line-height: 130%;
+            width: 279px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & > a {
+                display: block;
+                padding: 5px;
+                color: $grey-3a;
+                transition: all 0.4s ease-in-out;
+                &:hover,
+                &.active {
+                    color: $red;
+                }
+            }
+        }
+    }
+    &__nav {
+        &_arrow {
+            display: none;
+        }
+        padding-right: 29px;
+        cursor: pointer;
+        position: sticky;
+        top: 150px;
+        &_item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            &-active {
+                .page__nav_img span {
+                    background: $red;
+                }
+                // .page__nav_persone {
+                //     border-right: 1px solid $red;
+                // }
+                .page__nav_name,
+                .page__nav_spec {
+                    color: $red;
+                }
+            }
+            &:hover {
+                .page__nav_img span {
+                    background: $red;
+                }
+                // .page__nav_persone {
+                //     border-right: 1px solid $red;
+                // }
+                .page__nav_name,
+                .page__nav_spec {
+                    color: $red;
+                }
+            }
+        }
+        &_img {
+            position: relative;
+            width: 60px;
+            height: 80px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-right: 15px;
+            & span {
+                display: block;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: #fff;
+                position: absolute;
+                bottom: 0;
+                transition: all 0.4s ease-in-out;
+                
+            }
+            & img {
+                position: relative;
+                z-index: 1;
+                width: 60px;
+                height: auto;
+            }
+        }
+        &_persone {
+            margin-top: 20px;
+            width: 196px;
+            min-height: 52px;
+            border-right: 1px solid transparent;
+            transition: all 0.4s ease-in-out;
+        }
+        &_name {
+            font-family: "AngleciaProDisplay";
+            font-size: 16px;
+            line-height: 110%;
+            color: $grey-3a;
+        }
+        &_spec {
+            margin-top: 3px;
+            font-family: "AngleciaProDisplay";
+            font-size: 12px;
+            line-height: 110%;
+            color: $grey-aa;
+        }
+
+    }
+    &__content {
+        width: 100%;
+        max-width: 942px;
+        padding: 30px 78px 50px 50px;
+        display: flex;
+        justify-content: space-between;
+        background: #FFFFFF;
+        &_wrapper {
+            padding-top: 50px;
+            margin-left: 76px;
+        }
+        &_spec {
+            font-size: 14px;
+            line-height: 110%;
+            color: $grey-aa;
+            font-family: "AngleciaProDisplay";
+        }
+        &_name {
+            margin-top: 22px;
+            font-family: "AngleciaProDisplay";
+            font-size: 30px;
+            line-height: 110%;
+            color: $grey-3a;
+        }
+        &_list {
+            margin-top: 24px;
+        }
+        &_item {
+            max-width: 324px;
+            position: relative;
+            padding-left: 40px;
+            font-family: "AngleciaProDisplay";
+            font-size: 16px;
+            line-height: 150%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $grey-3a;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 1px;
+                background: $red;
+                position: absolute;
+                left: 0;
+                top: 12px;
+            }
+        }
+    }
+    &__bottom {
+        &_back {
+            padding: 43px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & > a {
+                font-size: 14px;
+                line-height: 110%;
+                letter-spacing: 0.25em;
+                text-transform: uppercase;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $red;
+                &:hover {
+                    color: $red-hover;
+                }
+            }
+        }
+    }
+    &__gradient {
+        padding-top: 110px;
+        background: rgba(228, 218, 207,1);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(241,238,234,1) 75%, rgba(228, 218, 207,1) 100%);
+        &-requisites {
+            background: rgba(228, 218, 207,1);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(241,238,234,1) 75%, #F1EEEA 100%);
+        }
+    }
+    &__gradient-top {
+        background: #E4DACF;
+        padding-top: 110px;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 57%, #E4DACF 100%);
+        &>.top {
+            border: none;
+        }
+    }
+    &__copy {
+        padding: 100px 0 105px 77px;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.05em;
+        color: $grey-b7;
+        & a {
+            color: $grey-b7;
+            &:hover {
+                color: $grey-3a;
+            }
+        }
+    }
+}

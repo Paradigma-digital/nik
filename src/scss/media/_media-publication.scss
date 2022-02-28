@@ -1,0 +1,125 @@
+@media (max-width: 1200px) {
+    .publication {
+        &__date {
+            right: 0;
+        }
+        &__content {
+            &_img {
+                width: 88%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .publication {
+        &__content {
+            &_img {
+               height: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .publication {
+        &__content {
+            &_img {
+                width: 87%;
+                height: 275px;
+            }
+        }
+        &__date {
+            & > .publications__item_date {
+                width: 46px;
+                & > span {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 540px) {
+    .publication {
+        padding-bottom: 0;
+        &__content {
+            &_img {
+                width: 263px;
+                height: 150px;
+            }
+            &_name {
+                &-italic {
+                    margin-top: 37px;
+                    font-size: 30px;
+                    line-height: 130%;
+                }
+            }
+            &_subtitle {
+                &-2 {
+                    margin-top: 60px;
+                    font-size: 30px;
+                    line-height: 120%;
+                }
+                &-3 {
+                    margin-top: 60px;
+                    font-size: 24px;
+                    line-height: 120%;
+                }
+                &-4 {
+                    margin-top: 60px;
+                    font-size: 20px;
+                    line-height: 120%;
+                }
+                &-5 {
+                    margin-top: 60px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 120%;
+                }
+            }
+            &_decor {
+                padding: 35px 0 35px 20px;
+                width: calc(100% + 40px);
+                margin: 0 -20px;
+                margin-top: 40px;
+                & .persone__about_subtitle {
+                    font-size: 24px;
+                    line-height: 120%;
+                }
+            }
+        }
+        &__date {
+            & > .publications__item_date {
+                width: 46px;
+                font-size: 10px;
+                line-height: 110%;
+                & > span {
+                    font-size: 25px;
+                }
+            }
+        }
+        &__author {
+            width: calc(100% + 40px);
+            margin: 0 -20px;
+            padding-bottom: 55px;
+            &_title {
+                margin-top: 15px;
+            }
+            &_photo {
+                width: 320px;
+                height: 240px;
+            }
+            &_name {
+                margin-top: 24px;
+                font-size: 20px;
+                line-height: 130%;
+            }
+            &_spec {
+                margin-top: 3px;
+                font-size: 12px;
+                line-height: 120%;
+            }
+            
+        }
+    }
+}

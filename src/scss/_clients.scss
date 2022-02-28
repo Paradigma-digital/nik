@@ -1,0 +1,123 @@
+.clients{
+    padding-top: 96px;
+    &__title {
+        font-size: 65px;
+    }
+    &__nav {
+        width: 85%;
+        max-width: 1055px;
+        margin: 0 auto; 
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        &_link {
+            width: 173px;
+            height: 47px;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            border-radius: 45px;
+            font-size: 18px;
+            line-height: 45px;
+            text-align: center;
+            color: $red;
+            transition: all 0.2s ease-in-out;
+            &-active {
+                border: 1px solid $red;
+            }
+            &:hover {
+                border: 1px solid $red;
+            }
+        }
+    }
+    &__slider {
+        background: #FFFFFF;
+        margin-top: 15px;
+        position: relative;
+        
+        &_prev {
+            top: calc(50% - 25px);
+            left: -25px;
+        }
+        &_next {
+            top: calc(50% - 25px);
+            right: -25px;
+        }
+        &-main {
+            overflow: hidden;
+        }
+    }
+    &__slide {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 610px;
+        width: 50%;
+        // &_wrapp {
+        //     overflow: hidden;
+        // }
+        // display: grid;
+        // grid-template: repeat(2, minmax(auto, 305px)) / repeat(4, minmax(auto, 317px));
+        &_item {
+            height: 305px;
+            width: 50%;
+            padding-bottom: 42px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            border: 0.5px solid $grey-ed;
+            background: transparent;
+            // &:nth-child(1),
+            // &:nth-child(5) {
+            //     border-left: unset;
+            // }
+            // &:nth-child(1),
+            // &:nth-child(2),
+            // &:nth-child(3),
+            // &:nth-child(4) {
+            //     border-top: unset;
+            // }
+            // &:nth-child(5),
+            // &:nth-child(6),
+            // &:nth-child(7),
+            // &:nth-child(8) {
+            //     border-bottom: unset;
+            // }
+            // &:nth-child(4),
+            // &:nth-child(8) {
+            //     border-right: unset
+            // }
+        }
+        &_text {
+            margin-top: 50px;
+            font-size: 16px;
+            line-height: 120%;
+            color: $grey-3a;
+            text-align: center;
+        }
+    }
+    &__politics {
+        margin-top: 28px;
+        font-size: 14px;
+        line-height: 150%;
+        color: $grey-b7;
+        text-align: center;
+    }
+
+    /*page*/
+    & .page__top-nav_divider {
+        display: none;
+    }
+    &__cards {
+        display: grid;
+        grid-template: repeat(5, 260px) / repeat(4, 294px);
+        gap: 50px 30px;
+        & > .clients__slide_item {
+            border: none;
+            width: 100%;
+        }
+    }
+}

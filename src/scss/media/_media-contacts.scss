@@ -1,0 +1,122 @@
+@media (max-width: 1200px) {
+    .contacts {
+        &__wrapper {
+            padding: 40px 30px 40px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts {
+        &__wrapper {
+            padding: 40px 15px 40px;
+        }
+        &__img {
+            margin: 0 15px;
+        }
+        &__top {
+            &_item {
+                & > a {
+                    font-size: 30px;
+                }
+            }
+        }
+        &__bottom {
+            padding-top: 45px;
+            &_map {
+                &-wrapp {
+                    width: 315px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        &__top {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__bottom {
+            flex-direction: column;
+            align-items: center;
+            &_map {
+                margin-top: 52px;
+                &-wrapp {
+                    width: 540px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .contacts {
+        background: #fff;
+        &__wrapper {
+            padding: 0;
+        }
+        &__top {
+            padding-bottom: 33px;
+            &_item {
+                &>.time {
+                    font-size: 16px;
+                    line-height: 170%;
+                }
+                &:last-child{
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__img {
+            margin-top: 17px;
+            width: 62px;
+            height: 86px;
+            &>*,&>*>* {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        &__bottom {
+            &_address {
+                & > br {
+                    display: none;
+                }
+            }
+            &_img {
+                width: 95px;
+                height: 52px;
+                &>*,&>*>* {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &_parking {
+                margin-top: 30px;
+                &>P {
+                    border: none;
+                    padding: 0;
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 120%;
+                    max-width: 207px;
+                    margin-left: 20px;
+                }
+            }
+            &_map{
+                &-wrapp {
+                    width: 360px;
+                    height: 250px;
+                }
+            }
+        }
+        & .footer__top {
+            background: #F1EEEA;
+            & .container {
+                flex-direction: column;
+            }
+        }
+    }
+}

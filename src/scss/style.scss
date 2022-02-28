@@ -1,0 +1,141 @@
+@import 'fonts';
+@import 'all/variables';
+@import 'all/mixins';
+@import '../../node_modules/swiper/swiper-bundle.css';
+@import '../../node_modules/swiper/swiper.scss';
+
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	// height: 100%;
+	// width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited, a:active, a:hover, a:focus{text-decoration: none; font-weight: normal;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+* {
+	font-family: abodoninova;
+}
+body {
+	background: $grey-f8;
+}
+.container {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.title {
+	// font-family: abodoninova;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 55px;
+	line-height: 100%;
+	text-align: center;
+	color: $grey-3a;
+	&__main {
+		font-size: 65px;
+		line-height: 80px;	
+	}
+	&__red {
+		font-size: 40px;
+		line-height: 110%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color:$red;
+	}
+	&>a {
+		color: $grey-3a;
+		transition: all 0.4s ease-in-out;
+	}
+	&>a:hover {
+		color: $red;
+	}
+}
+.main__wrapper {
+	@include gradient;
+	padding-bottom: 558px;
+}
+
+
+// @import 'selects';
+@import 'all/video';
+
+@import 'all/modal';
+@import 'all/top';
+@import 'all/btn';
+@import 'all/header';
+@import 'all/page';
+@import 'all/footer';
+@import 'promo';
+@import 'about';
+@import 'result';
+@import 'services';
+@import 'team';
+@import 'clients';
+@import 'thank';
+@import 'all/bottom';
+@import 'achievements';
+@import 'persone';
+@import 'practice';
+@import 'review';
+@import 'publications';
+@import 'publication';
+@import 'contacts';
+@import 'requisites';
+@import 'college';
+@import 'pages/services-page';
+@import 'pages/service-page';
+
+
+@import 'media/media-all';
+
+
+@import 'media/media-home';
+@import 'media/media-achievements';
+@import 'media/media-clients';
+@import 'media/media-team';
+@import 'media/media-thank';
+@import 'media/media-persone';
+@import 'media/media-practices';
+@import 'media/media-review';
+@import 'media/media-publications';
+@import 'media/media-publication';
+@import 'media/media-contacts';
+@import 'media/media-requisites';
+@import 'media/media-college';

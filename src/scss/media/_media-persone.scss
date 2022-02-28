@@ -1,0 +1,375 @@
+@media (max-width: 1365px) {
+    .persone {
+        &__content {
+            max-width: 780px;
+            & div[id=card]:before {
+                width: 100%;
+            }
+        }
+        &__video {
+            &_el {
+                width: 100%;
+            }
+        }
+        &__general {
+            padding-left: 0;
+            &_photo {
+                width: 350px;
+                &>*,&>*>* {
+                    width: 100%;
+                }
+            }
+            &_descr {
+                margin-left: 45px;
+                padding-top: 15px;
+            }
+        }
+        &__nav {
+            margin-right: 10px;
+        }
+        &__video {
+            &_title {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .persone {
+        &__content {
+            max-width: 700px;
+        }
+        &__general {
+            padding-left: 0;
+            &_photo {
+                width: 280px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .persone{
+        &__wrapper {
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+        &__nav {
+            min-height: 70px;
+            height: 100%;
+            z-index: 10;
+            padding-top: 22px;
+            top: 0;
+            border-top: 1px solid $grey-ed;
+            // justify-content: center;
+            & li {
+                margin-bottom: 0;
+                & a {
+                    display: block;
+                    margin-bottom: 22px;
+                }
+            }
+        }
+        &__content {
+            max-width: 100%;
+        }
+        & .practice_slider,
+        & .work_slider,
+        & .thank_slider,
+        & .achievements_slider,
+        & .publications_slider {
+            padding-bottom: 100px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .container {
+        padding: 0 20px;
+    }
+    .persone {
+        &__general {
+            padding-top: 20px;
+            flex-direction: column;
+            align-items: center;
+            &_photo {
+                width: 320px;
+                height: 317px;
+                margin: 0 auto;
+                &>*,&>*>* {
+                    width: 264px;
+                    max-height: 100%;
+                    height: unset;
+                }
+            }
+            &_descr {
+                width: 80%;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+        & #persone__video::before {
+            display: none;
+        }
+        &__about {
+            &_title {
+                font-size: 35px;
+            }
+            &_right {
+               max-width: 65%;
+            }
+            &_list {
+                &-item {
+                    font-size: 16px;
+                    &:not(:last-child) {
+                        margin-bottom: 11px;
+                    }
+                }
+            }
+            &_slider {
+                & .thank_slider_item,
+                & .achievements_slider_item   {
+                    width: 50%  !important;
+                }
+                & .publications_slider__item {
+                    padding: 20px;
+                    & .publications_slider_btn {
+                        margin-top: 17px;
+                    }
+                }
+            }
+        }
+        & .practice_slider,
+        & .work_slider,
+        & .thank_slider,
+        & .achievements_slider,
+        & .publications_slider {
+            padding-bottom: 100px;
+            & .btn.btn_slider {
+                display: none;
+            }
+            
+        }
+        & .practice_slider {
+            & .practice_slider__item {
+                padding: 28px 20px;
+                &_title {
+                    width: 100%;
+                    font-size: 20px;
+                }
+                &_btn {
+                    margin-top: 17px;
+                }
+            }
+        }
+        & .publications_slider {
+            &_descr {
+                &>.category {
+                    font-size: 12px;
+                }
+            }
+            &_title {
+                font-size: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 540px) {
+   .page__title {
+       width: 100%;
+       max-width: unset;
+   }
+   .top {
+        padding: 42px 0 30px;
+   }
+
+   .persone {
+       &__about {
+           &_wrapper {
+               margin-top: 18px;
+           }
+           &_title {
+               font-size: 30px;
+               line-height: 120%;
+               margin-top: 70px;
+           }
+           &_img {
+               width: 93px;
+               height: 93px;
+               margin-right: 21px;
+           }
+           &_subtitle {
+               font-size: 24px;
+           }
+           &_list {
+               margin-top: 9px;
+               &-item {
+                   padding-left: 39px;
+                   &:not(:last-child) {
+                        margin-bottom: 13px;
+                    }
+                }
+           }
+           &_olist {
+                &-item {
+                    font-size: 18px;
+                }
+            }
+           &_right {
+               width: 62%;
+           }
+       }
+       & #spec {
+           & .persone__about_title {
+               margin-top: 44px;
+           }
+           & .persone__about_wrapper {
+               &:last-child {
+                   position: relative;
+                   padding-bottom: 50px;
+                   &:before {
+                       content: '';
+                       display: block;
+                       width: calc(100% + 40px);
+                       position: absolute;
+                       left: -20px;
+                       bottom: 0;
+                       border-bottom: 1px solid #EDEDED;
+                   }
+               }
+           }
+       }
+       &__nav {
+           margin: 0 -20px;
+           width: calc(100% + 40px);
+           min-height: 60px;
+           align-items: flex-start;
+           padding: 20px 0 0 20px;
+           & li {
+               & a {
+                   font-size: 16px;
+               }
+           }
+       }
+        & .page__nav_arrow {
+            top: 23px;
+            right: 13px;
+        }
+        &__general {
+            padding-top: 12px;
+            flex-direction: column;
+            align-items: center;
+            align-items: center;
+            padding-bottom: 23px;
+            &_photo {
+                width: 264px;
+                height: 317px;
+                max-height: 297px;
+                margin: 0 auto;
+                &>*,&>*>* {
+                    max-height: 297px;
+                }
+            }
+            &_descr {
+                width: 100%;
+                margin-top: 14px;
+            }
+            &_text {
+                margin-top: 9px;
+                margin-bottom: 15px;
+                &>span {
+                    display: inline-block;
+                }
+            }
+            &_tel {
+                margin-top: 20px;
+            }
+            &_btns {
+                & .btn_persone {
+                    width: 320px;
+                    margin-top: 20px;
+                }
+                & .thank__slide_plus {
+                    letter-spacing: 0.15em;
+                    font-size: 16px;
+                    margin-top: 25px;
+                }
+            } 
+        }
+        &__video {
+            padding-top: 27px;
+            padding-bottom: 31px;
+            &_title {
+                text-align: left;
+            }
+        }
+        & .practice_slider,
+        & .work_slider,
+        & .thank_slider,
+        & .achievements_slider,
+        & .publications_slider {
+            padding-bottom: 37px;
+            & .swiper-pagination {
+                bottom: 0;
+            }
+        }
+        & .practice_slider {
+            & .practice_slider__item {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        & .practice_slider,
+        & .work_slider {
+            width: calc(100% + 40px);
+            margin: 0 -20px;
+            margin-top: 22px;
+            &__item {
+                height: 244px;
+                &_img {
+                    margin-bottom: 0;
+                    &>*,&>*>* {
+                        width: 125px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        & .thank_slider {
+            overflow-x:hidden;
+            margin: 0 -20px;
+            &__wrapper {  
+                width: 567px!important;
+            }
+            &_item {
+                width: 283px !important;
+                height: 480px;
+            }
+        }
+        & .achievements_slider {
+            overflow-x:hidden;
+            margin: 0 -20px;
+            &__wrapper {
+                width: 567px!important;
+            }
+            &_item {
+                width: 283px !important;
+                height: 480px;
+                border-bottom: unset;
+                border-top: unset;
+            }
+        }
+        & .publications_slider {
+            &__item {
+                padding: 0;
+                border: unset;
+                & .thank__slide_plus  {
+                    margin-top: 30px;
+                }
+            }
+        }
+   }
+
+}

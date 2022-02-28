@@ -1,0 +1,121 @@
+.contacts {
+    &__wrapper {
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 66px 107px 75px;
+        background: #fff;
+    }
+    &__top {
+        padding-bottom: 71px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $grey-ed;
+        &_item {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            & > .time {
+                color: $red;
+                font-size: 24px;
+                line-height: 170%;
+            }
+            & > a {
+                margin-top: 8px;
+                font-size: 35px;
+                line-height: 100%;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $grey-3a;
+                transition: all 0.4s ease-in-out;
+                &:hover {
+                    color: $red-hover;
+                }
+            }
+        }
+    }
+    &__img {
+        margin: 0 37px;
+    }
+    &__bottom {
+        padding-top: 79px;
+        display: flex;
+        justify-content: space-between;
+        &_metro {
+            & > span {
+                margin-right: 19px;
+                font-size: 16px;
+                line-height: 150%;
+                color: $grey-3a;
+            }
+        }
+        &_address {
+            margin-top: 15px;
+            font-size: 24px;
+            line-height: 150%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $grey-3a;
+        }
+        &_parking {
+            margin-top: 42px;
+            display: flex;
+            & > p {
+                max-width: 60%;
+                margin-left: 23px;
+                padding-left: 20px;
+                border-left: 1px solid #4F9C77;
+                font-size: 24px;
+                line-height: 120%;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #4F9C77;
+            }
+        }
+        &_text {
+            margin-top: 39px;
+            font-size: 16px;
+            line-height: 150%;
+            color: $grey-3a;
+        }
+        &_mail {
+            display: block;
+            margin-top: 21px;
+            font-size: 20px;
+            line-height: 170%;
+            color: $red;
+            &:hover {
+                color: $red-hover;
+            }
+        }
+        &_social {
+            margin-top: 42px;
+            display: flex;
+            justify-content: flex-start;
+            & > a {
+                margin-right: 50px;
+                transition: all 0.4s ease-in-out;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        &_map {
+            &-wrapp {
+                width: 432px; 
+                height: 450px;
+            }
+            &-plus {
+                margin-top: 32px;
+            }
+        }
+
+    }
+    & > .footer__top  {
+        padding-top: 101px;
+        & > .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+}

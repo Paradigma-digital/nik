@@ -1,0 +1,86 @@
+.btn{
+    width: 90%;
+    max-width: 300px;
+    height: 65px;
+    font-size: 18px;
+    line-height: 65px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: $red;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    border-radius: 99px;
+    &:hover {
+        background: $red-hover;
+    }
+    &_form {
+        margin-top: 39px;
+    }
+    &_header {
+        width: 165px;
+        height: 50px;
+        text-transform: capitalize;
+        font-size: 16px;
+        line-height: 50px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        letter-spacing: 0.01em;
+        &_mob {
+            display: none;
+        }
+    }
+    &_plus {
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            color: $red-hover;
+        }
+        &>span svg line {
+            transition: all 0.4s ease-in-out;
+        }
+        &:hover>span svg line {
+            stroke: $red-hover;
+        }
+    }
+    &_team {
+        margin-top: 28px;
+        width: 324px;
+        max-width: 324px;
+        font-size: 16px;
+        font-family: "AngleciaProDisplay";
+        letter-spacing: 0.2em;
+    }
+    &_slider {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        &_w {
+            background: #fff;
+            & svg line {
+                stroke: $red;
+            }
+            & svg path {
+                stroke: $red;
+            }
+        }
+        &_w:hover {
+            background: $red-hover;
+            & svg line {
+                stroke: #fff;
+            }
+            & svg path {
+                stroke: #fff;
+            }
+        }
+    }
+    &-nav {
+        position: static;
+    }
+    &_persone {
+        width: 324px;
+    }
+}

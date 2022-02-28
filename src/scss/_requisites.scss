@@ -1,0 +1,34 @@
+.requisites {
+    &__wrapper {
+        max-width: 1110px;
+        margin: 0 auto;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 679px;
+        padding: 98px 31px 91px 107px;
+        border-right: 1px solid $grey-ed;
+        & > p {
+            font-size: 16px;
+            line-height: 150%;
+            color: $grey-3a; 
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }  
+            & > span {
+                font-weight: 700;
+            } 
+        }
+    }
+    &__img {
+        padding: 72px 94px 0 55px;
+        & > *,
+        & > * > * {
+            width: 282px;
+            height: 250px;
+            object-fit: contain;
+        }
+    }
+}

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Персона"
+})
+<body>
+    @@include('html/header.html', {
+        "class" : "not-main"
+    })
+
+    <main class="page">
+        @@include('html/top.html', {
+            "src": "Юрий Николаевич Николаев",
+            "title": "Юрий Николаевич Николаев"
+        })
+        <section class="persone">
+            <div class="container">
+                <div class="persone__wrapper">
+                    <ul class="page__nav persone__nav" > 
+                        <botton class="page__nav_arrow">
+                            
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.85268 9.57143L1 1.2597M8.14732 9.31173L16 1" stroke="#9A211D"/>
+                            </svg>
+    
+                        </botton>
+                        <li >
+                            <a href="#card" class="active">Карточка адвоката</a>
+                        </li>
+                        <li>
+                            <a href="#spec">Практика по специализации</a>
+                             
+                        </li>
+                        <li>
+                            <a href="#biography">Биография</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#education">Образование</a>
+                              
+                        </li>
+                        <li>
+                            <a href="#prof">Профессиональный путь</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#resonant">Резонансные дела</a>
+                            
+                        </li>
+                        
+                        <li>
+                            <a href="#practic">Практика</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#clients">Клиенты</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+
+                        </li>
+                        <li><a href="#public">Публикации</a></li>
+                    </ul>
+                    <div class="persone__content">
+                        <div class="persone__general" id="card">
+                            <div class="persone__general_photo">
+                                <img src="@img/team/content/content-1.png" alt="">
+                            </div>
+                            <div class="persone__general_descr">
+                                <span class="persone__general_spec">
+                                    Специализация
+                                </span>
+                                <p class="persone__general_text">
+                                    Общий стаж юридической работы 
+                                    <span>более 20 лет.</span>
+                                </p>
+                                <p class="persone__general_text">
+                                    Стаж управления коллегией адвокатов 
+                                    <span>более 15 лет.</span>
+                                </p>
+                                <p class="persone__general_text">
+                                    <span>Регистрационный номер 77/6604</span>
+                                    в реестре адвокатов г. Москвы
+                                </p>
+
+                                <a class="persone__general_tel"  href="tel:+79067256767">+7 (906) 725-67-67</a>
+
+                                <div class="persone__general_btns">
+                                    <button class="btn btn_team btn_persone">консультация</button>
+                                    <a href="#" class="btn_plus thank__slide_plus">
+
+                                        Скачать файл vCard
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <span class="page__top-nav_divider"></span> -->
+
+                        <div class="persone__video">
+                            <h3 class="persone__video_title">
+                                Ваши интересы превыше моих, мой долг – их защита
+                            </h3>
+        
+                            <div class="result__video video persone__video_el">
+                                <div id="persone__video"></div>
+                                <div class="poster">
+                                    <img src="@img/result/video.png" alt="">
+                                </div>
+                                
+                                <button class="play">
+                                    <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0L90 47.093L0 90V0Z" fill="white" fill-opacity="0.5"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="persone__about">
+                            <div id="spec">
+                                <h3 class="persone__about_title" >
+                                    Практика по специализации
+                                </h3>
+                                <div class="persone__about_wrapper">
+                                    <div class="persone__about_img">
+                                        <img src="@img/persone/item-1.png" alt="">
+                                    </div>
+                                    <div class="persone__about_right">
+                                        <h4 class="persone__about_subtitle">
+                                            Уголовные дела
+                                        </h4>
+                                        <ul class="persone__about_list">
+                                            <li class="persone__about_list-item">
+                                                Статья 171 ук рф незаконное предпринимательство 
+                                            </li>
+                                            <li class="persone__about_list-item">  
+                                                Статья 111 ук рф
+                                            </li>
+                                            <!-- <li class="persone__about_list-item">
+                                                Должностные преступления 
+                                            </li>
+                                            <li class="persone__about_list-item">
+                                                Статья 172 ук рф незаконная банковская деятельности (обнал)
+                                            </li>
+                                            <li class="persone__about_list-item">
+                                                Мошенничество
+                                            </li> -->
+                                        </ul>
+                                    </div>
+    
+    
+                                </div> 
+                                <div class="persone__about_wrapper">
+                                    <div class="persone__about_img">
+                                        <img src="@img/persone/item-2.png" alt="">
+                                    </div>
+                                    <div class="persone__about_right">
+                                        <h4 class="persone__about_subtitle">
+                                            Банкротство физ лиц
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="persone__about_wrapper">
+                                    <div class="persone__about_img">
+                                        <img src="@img/persone/item-3.png" alt="">
+                                    </div>
+                                    <div class="persone__about_right">
+                                        <h4 class="persone__about_subtitle">
+                                            Гражданские дела
+                                        </h4>
+                                        <ul class="persone__about_list">
+                                            <li class="persone__about_list-item">
+                                                Наследственные споры 
+                                            </li>
+                                            <li class="persone__about_list-item">  
+                                                Взыскание ущерба 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div id="biography">
+                                <h3 class="persone__about_title" >
+                                    Биография
+                                </h3>
+                                <p class="persone__about_text">
+                                    Родился 24 июля 1978 года в Москве. Женат, имеет двоих детей. Увлекается горнолыжным спортом и охотой.
+                                </p>
+                            </div>
+
+                            <div id="education">
+                                <h3 class="persone__about_title" >
+                                    Образование
+                                </h3>
+                                <p class="persone__about_text">
+                                    Выпускник Университета Российской академии образования. В соответствии с требованиями федерального закона«Об адвокатской деятельности и адвокатуре в РФ» одним из первых успешно сдал экзамены по специальности и был принят в Адвокатскую палату города Москвы.
+                                </p>
+                            </div>
+
+                            <div id="prof">
+                                <h3 class="persone__about_title" >
+                                    Профессиональный путь
+                                </h3>
+                                <p class="persone__about_text">
+                                    Имеет опыт практической работы в Правовом управлении Государственной Думы РФ.Работал в Министерстве юстиции РФ в должности ведущего специалиста. Присвоен классный чин «Юрист 1-го класса». На протяжении 3-х лет обеспечивал правовое обслуживание филиала ОАО «Мосэнерго».
+                                </p> 
+                                <p class="persone__about_text">
+                                    В 2004 году Генри Маркович Резник наградил адвоката Юрия Николаева «За высокое профессиональное мастерство в деле защиты прав, свобод и законных интересов, граждан и юридических лиц».
+                                </p>
+                                <p class="persone__about_text">
+                                    В 2004 году под авторством Юрия Николаева в издательства «Эксмо» выходят книги: «Сделки с недвижимостью.»
+                                    «Страхование личности и имущества.»
+                                </p>
+                                <p class="persone__about_text">
+                                    В 2006 году создал и возглавил Московскую коллегию адвокатов «Николаев и партнеры», а также выступил учредителем ООО «Юридическая фирма «Николаев и партнёры».
+                                </p>
+                                <p class="persone__about_text">
+                                    С 2006 года по н.в. – Председатель МКА «Николаев и партнеры».
+                                </p>
+                                <p class="persone__about_text">
+                                    С 2009 года страхует свою ответственность.
+                                </p>
+                                <p class="persone__about_text">
+                                    В настоящий момент, СК «РЕСО» высоко оценило   профессиональные качества адвоката Николаева Ю.Н. и застраховала его на 100 000 000 руб.
+                                </p>
+                            </div>
+
+                            <div id="resonant">
+                                <h3 class="persone__about_title" >
+                                    Резонансные дела
+                                </h3>
+    
+                                <ol class="persone__about_olist">
+                                    <li class="persone__about_list-item persone__about_olist-item">
+                                        Дело фонда Hermitage Capital Management.
+                                    </li>
+                                    <li class="persone__about_list-item persone__about_olist-item">
+                                        Дело АО «Банк ТуранАлем» (БТА Банк).
+                                    </li>
+                                    <li class="persone__about_list-item persone__about_olist-item">
+                                        Дело о споре с управлением Росреестра по г. Москве за 5 зданий.
+                                    </li>
+                                    <li class="persone__about_list-item persone__about_olist-item">
+                                        Дело по спору между ООО «Стройгазконсалтинг» и ООО «НСГД» в рамках строительства Системы магистральных газопроводов Ямал—Европа.
+                                    </li>
+                                    <li class="persone__about_list-item persone__about_olist-item">
+                                        Дело о выводе из бюджета России более 100 особняков в центре Москвы стоимостью более10 000 000 000 руб.
+                                    </li>
+                                    <li class="persone__about_list-item persone__about_olist-item">
+                                        Дело о споре по авторским правам фильма «Матрица. Перезагрузка».
+                                    </li>
+                                    <li class="persone__about_list-item persone__about_olist-item">
+                                        Дело против Правительства Москвы «О бумажных инвестиционных контрактах» по адресу: ул. Кропоткинская, д.22.
+                                    </li>
+                                    <li class="persone__about_list-item persone__about_olist-item">
+                                        Спор о проектной документации по строительству крупнейшего в Европе мясоперерабатывающего завода.
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div id="practic">
+                                <h3 class="persone__about_title" >
+                                    Практика
+                                </h3>
+                                <div class="persone__about_slider practice_slider">
+                                    <a href="#"  class="btn btn_slider practice_slider_prev">                    
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(0.701517 0.712652 -0.701517 0.712652 0.669189 9.11523)" stroke="white"/>
+                                            <path d="M0.79071 9.23719L8.99996 1.10303" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="btn btn_slider practice_slider_next">
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(-0.701517 0.712652 0.701517 0.712652 9.33081 9.11523)" stroke="white"/>
+                                            <path d="M9.20929 9.23719L1.00004 1.10303" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                    
+                                    <div class="swiper practice_slider__wrapper">
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-wrapper">
+                                            <div class="practice_slider__item swiper-slide">
+                                                <div class="practice_slider__item_header">
+                                                    <div class="practice_slider__item_photo">
+                                                        <img src="@img/team/nav/item-1.png" alt="">
+                                                    </div>
+                                                    <div class="practice_slider__item_header_wrapp">
+                                                        <p class="name">
+                                                            Юрий Николаевич Николаев
+                                                        </p>
+                                                        <p class="category">
+                                                            Категория практики
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <p class="practice_slider__item_title">
+                                                    Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                                </p>
+                                                <button class="btn_plus thank__slide_plus practice_slider__item_btn">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </button>
+                                            </div>
+                                            <div class="practice_slider__item swiper-slide">
+                                                <div class="practice_slider__item_header">
+                                                    <div class="practice_slider__item_photo">
+                                                        <img src="@img/team/nav/item-1.png" alt="">
+                                                    </div>
+                                                    <div class="practice_slider__item_header_wrapp">
+                                                        <p class="name">
+                                                            Юрий Николаевич Николаев
+                                                        </p>
+                                                        <p class="category">
+                                                            Категория практики
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <p class="practice_slider__item_title">
+                                                    Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                                </p>
+                                                <button class="btn_plus thank__slide_plus practice_slider__item_btn">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </button>
+                                            </div>
+                                            <div class="practice_slider__item swiper-slide">
+                                                <div class="practice_slider__item_header">
+                                                    <div class="practice_slider__item_photo">
+                                                        <img src="@img/team/nav/item-1.png" alt="">
+                                                    </div>
+                                                    <div class="practice_slider__item_header_wrapp">
+                                                        <p class="name">
+                                                            Юрий Николаевич Николаев
+                                                        </p>
+                                                        <p class="category">
+                                                            Категория практики
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <p class="practice_slider__item_title">
+                                                    Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                                </p>
+                                                <button class="btn_plus thank__slide_plus practice_slider__item_btn">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </button>
+                                            </div>
+                                            <div class="practice_slider__item swiper-slide">
+                                                <div class="practice_slider__item_header">
+                                                    <div class="practice_slider__item_photo">
+                                                        <img src="@img/team/nav/item-1.png" alt="">
+                                                    </div>
+                                                    <div class="practice_slider__item_header_wrapp">
+                                                        <p class="name">
+                                                            Юрий Николаевич Николаев
+                                                        </p>
+                                                        <p class="category">
+                                                            Категория практики
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <p class="practice_slider__item_title">
+                                                    Представление интересов организаций в корпоративном споре с бывшим директором (дело а40-233680/2018)
+                                                </p>
+                                                <button class="btn_plus thank__slide_plus practice_slider__item_btn">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="clients">
+                                <h3 class="persone__about_title" >
+                                    Работает с клиентами
+                                </h3>
+                                <div class="persone__about_slider work_slider">
+                                    <a href="#"  class="btn btn_slider work_slider_prev">                    
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(0.701517 0.712652 -0.701517 0.712652 0.669189 9.11523)" stroke="white"/>
+                                            <path d="M0.79071 9.23719L8.99996 1.10303" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="btn btn_slider work_slider_next">
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(-0.701517 0.712652 0.701517 0.712652 9.33081 9.11523)" stroke="white"/>
+                                            <path d="M9.20929 9.23719L1.00004 1.10303" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                    <div class="work_slider__wrapper swiper">
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-wrapper">
+                                            <a href="#" class="clients__slide_item work_slider__item swiper-slide">
+                                                <div class="work_slider__item_img">
+                                                    <img src="@img/clients/item-1.png" alt="">
+                                                </div>
+                                                <p class="clients__slide_text">
+                                                    АО «Стройтрансгаз»
+                                                </p>
+                                            </a>
+                                            <a href="#" class="clients__slide_item work_slider__item swiper-slide">
+                                                <div class="work_slider__item_img">
+                                                    <img src="@img/clients/item-2.png" alt="">
+                                                </div>
+                                                <p class="clients__slide_text">
+                                                    ООО «Надымстройгаздобыча»
+                                                </p>
+                                            </a>
+                                            <a href="#" class="clients__slide_item work_slider__item swiper-slide">
+                                                <div class="work_slider__item_img">
+                                                    <img src="@img/clients/item-3.png" alt="">
+                                                </div>
+                                                <p class="clients__slide_text">
+                                                    АО Дорожно-строительная компания «АВТОБАН»
+                                                </p>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="reviews">
+                                <h3 class="persone__about_title" >
+                                    Благодарственные письма
+                                </h3>
+                                <div class="persone__about_slider thank_slider">
+                                    <a href="#"  class="btn btn_slider thank_slider_prev">                    
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(0.701517 0.712652 -0.701517 0.712652 0.669189 9.11523)" stroke="white"/>
+                                            <path d="M0.79071 9.23719L8.99996 1.10303" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="btn btn_slider thank_slider_next">
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(-0.701517 0.712652 0.701517 0.712652 9.33081 9.11523)" stroke="white"/>
+                                            <path d="M9.20929 9.23719L1.00004 1.10303" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                    <div class="thank_slider__wrapper swiper">
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-wrapper">
+                                            <a href="#" class="thank__slide_item thank_slider_item swiper-slide">
+                                                <div class="thank__slide_frame">
+                                                    <img src="@img/thank/doc-1.png" alt="doc">
+                                                </div>
+                                                <p class="thank__slide_text">
+                                                    Федеральное агентство лесного хозяйства
+                                                </p>
+                                                <span class="btn_plus thank__slide_plus">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </span>
+                                            </a>
+                                            <a href="#" class="thank__slide_item thank_slider_item swiper-slide">
+                                                <div class="thank__slide_frame">
+                                                    <img src="@img/thank/doc-1.png" alt="doc">
+                                                </div>
+                                                <p class="thank__slide_text">
+                                                    ООО “Надымстройгаздобыча”
+                                                </p>
+                                                <span class="btn_plus thank__slide_plus">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </span>
+                                            </a>
+                                            <a href="#" class="thank__slide_item thank_slider_item swiper-slide">
+                                                <div class="thank__slide_frame">
+                                                    <img src="@img/thank/doc-1.png" alt="doc">
+                                                </div>
+                                                <p class="thank__slide_text">
+                                                    Группа компаний Стройтрансгаз
+                                                </p>
+                                                <span class="btn_plus thank__slide_plus">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </span>
+                                            </a>
+                                            <a href="#" class="thank__slide_item thank_slider_item swiper-slide">
+                                                <div class="thank__slide_frame">
+                                                    <img src="@img/thank/doc-1.png" alt="doc">
+                                                </div>
+                                                <p class="thank__slide_text">
+                                                    Группа компаний Стройтрансгаз
+                                                </p>
+                                                <span class="btn_plus thank__slide_plus">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </span>
+                                            </a>
+                                            <a href="#" class="thank__slide_item thank_slider_item swiper-slide">
+                                                <div class="thank__slide_frame">
+                                                    <img src="@img/thank/doc-1.png" alt="doc">
+                                                </div>
+                                                <p class="thank__slide_text">
+                                                    Группа компаний Стройтрансгаз
+                                                </p>
+                                                <span class="btn_plus thank__slide_plus">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    подробнее
+                                                </span>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="persone__about_title">
+                                Достижения
+                            </h3>
+                            <div class="persone__about_slider achievements_slider">
+                                <a href="#"  class="btn btn_slider achievements_slider_prev">                    
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(0.701517 0.712652 -0.701517 0.712652 0.669189 9.11523)" stroke="white"/>
+                                        <path d="M0.79071 9.23719L8.99996 1.10303" stroke="white"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn btn_slider achievements_slider_next">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(-0.701517 0.712652 0.701517 0.712652 9.33081 9.11523)" stroke="white"/>
+                                        <path d="M9.20929 9.23719L1.00004 1.10303" stroke="white"/>
+                                    </svg>
+                                </a>
+                             <div class="achievements_slider__wrapper swiper">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="thank__slide_item achievements_slider_item swiper-slide">
+                                        <div class="thank__slide_frame">
+                                            <img src="@img/thank/doc-1.png" alt="doc">
+                                        </div>
+                                        <p class="thank__slide_text">
+                                            Федеральное агентство лесного хозяйства
+                                        </p>
+                                        <span class="btn_plus thank__slide_plus">
+                                            <span>
+                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                    <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                </svg>
+                                            </span>
+                                            увеличить
+                                        </span>
+                                    </a>
+                                    <a href="#" class="thank__slide_item achievements_slider_item swiper-slide">
+                                        <div class="thank__slide_frame">
+                                            <img src="@img/thank/doc-1.png" alt="doc">
+                                        </div>
+                                        <p class="thank__slide_text">
+                                            ООО “Надымстройгаздобыча”
+                                        </p>
+                                        <span class="btn_plus thank__slide_plus">
+                                            <span>
+                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                    <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                </svg>
+                                            </span>
+                                            увеличить
+                                        </span>
+                                    </a>
+                                    <a href="#" class="thank__slide_item achievements_slider_item swiper-slide">
+                                        <div class="thank__slide_frame">
+                                            <img src="@img/thank/doc-1.png" alt="doc">
+                                        </div>
+                                        <p class="thank__slide_text">
+                                            Группа компаний Стройтрансгаз
+                                        </p>
+                                        <span class="btn_plus thank__slide_plus">
+                                            <span>
+                                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                    <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                </svg>
+                                            </span>
+                                            увеличить
+                                        </span>
+                                    </a>
+                                </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div id="public">
+                                <h3 class="persone__about_title" >
+                                    Публикации адвоката
+                                </h3>
+                                <div class="persone__about_slider publications_slider">
+                                    <a href="#"  class="btn btn_slider publications_slider_prev">                    
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(0.701517 0.712652 -0.701517 0.712652 0.669189 9.11523)" stroke="white"/>
+                                            <path d="M0.79071 9.23719L8.99996 1.10303" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="btn btn_slider publications_slider_next">
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="-0.5" x2="11.0998" y2="-0.5" transform="matrix(-0.701517 0.712652 0.701517 0.712652 9.33081 9.11523)" stroke="white"/>
+                                            <path d="M9.20929 9.23719L1.00004 1.10303" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                    <div class="publications_slider__wrapper swiper">
+                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-wrapper">
+                                            <a href="#" class="publications_slider__item swiper-slide">
+                                                <div class="publications_slider_img">
+                                                    <img src="@img/persone/publik.png" alt="">
+                                                </div>
+                                                <div class="publications_slider_descr">
+                                                    <p class="category">
+                                                        Категория публикации
+                                                    </p>
+                                                    <p class="date">
+                                                        <span>30</span>
+                                                        03.2021
+                                                    </p>
+                                                </div>
+                                                <div class="publications_slider_title">
+                                                    Представление интересовпо спору с застройщикомо взыскании неосновательного обогащения
+                                                </div>
+                                                <span class="btn_plus thank__slide_plus publications_slider_btn">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    увеличить
+                                                </span>
+                                                
+                                            </a>
+                                            <a href="#" class="publications_slider__item swiper-slide">
+                                                <div class="publications_slider_img">
+                                                    <img src="@img/persone/publik.png" alt="">
+                                                </div>
+                                                <div class="publications_slider_descr">
+                                                    <p class="category">
+                                                        Категория публикации
+                                                    </p>
+                                                    <p class="date">
+                                                        <span>30</span>
+                                                        03.2021
+                                                    </p>
+                                                </div>
+                                                <div class="publications_slider_title">
+                                                    Представление интересовпо спору с застройщикомо взыскании неосновательного обогащения
+                                                </div>
+                                                <span class="btn_plus thank__slide_plus publications_slider_btn">
+                                                    <span>
+                                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="9.90918" y1="2.18557e-08" x2="9.90918" y2="19" stroke="#9A211D"/>
+                                                            <line y1="9.09082" x2="19" y2="9.09082" stroke="#9A211D"/>
+                                                        </svg>
+                                                    </span>
+                                                    увеличить
+                                                </span>
+                                                
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+                            
+                           
+                            
+                            
+                            
+                           
+
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>

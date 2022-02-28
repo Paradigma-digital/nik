@@ -1,0 +1,98 @@
+@media (max-width: 992px) {
+    .review {
+        &__slider {
+            &_wrapper {
+                width: 320px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .review {
+        &__promo {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .review {
+        &__promo {
+            &_wrapper {
+                margin-right: 0;
+            }
+            &_persone {
+                max-width: 208px;
+                padding-top: 11px;
+                & > .name {
+                    font-size: 20px;
+                    line-height: 120%;
+                }
+                & > .spac {
+                    margin-top: 2px;
+                }
+            }
+            &_img {
+                margin-right: 13px;
+                height: 88px;
+                padding-top: 10px;
+            }
+            & > .thank__slide_item {
+                width: 319px !important;
+                padding-bottom: 43px;
+                & .thank__slide_plus {
+                    margin-top: 26px;
+                }
+            }
+            
+            &_frame {
+                width: 100%;
+                height: 451px;
+                padding: 15px;
+                background: url(../img/thank/frame.png) center center/cover no-repeat;
+                &>*,&>*>* {
+                    width: 285px;
+                    height: 420px;
+                }
+            }
+        }
+        & .persone__about_wrapper {
+            padding: 27px 0;
+        }
+        & .persone__about_right {
+            padding-top: 0;
+        }
+        & .persone__about_subtitle{
+            font-size: 24px;
+            line-height: 120%;  
+        }
+        & .persone__about_list  {
+            margin-top: 7px;
+        }
+        & .persone__about_olist-item {
+            padding-left: 50px;
+        } 
+
+
+
+
+        &__slider {
+            padding-top: 55px;
+            padding-bottom: 35px;
+            &_wrapper {
+                margin-top: 22px;
+            }
+            &_title {
+                font-size: 30px;
+                line-height: 120%;
+            }
+            & .btn_slider {
+                display: none;
+            }
+            &_paginator {
+                margin-top: 25px;
+            }
+        }
+    }
+}

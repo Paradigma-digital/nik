@@ -1,0 +1,121 @@
+@media (max-width: 1365px) {
+    .team {
+        &-page {
+            &__nav {
+                padding-right: 10px;
+            }
+            &__photo {
+                margin-right: 0;
+            }
+            &__card {
+                padding: 30px 0 50px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .team {
+        &-page {
+            &__photo {
+                margin-right: 20px;
+            }
+            &__card {
+                max-height: unset;
+                
+                &_btns {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .team {
+        &-page {
+            &__wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__nav {
+                position: relative;
+                top: 0;
+                border-top: 1px solid #EDEDED;
+                &_item {
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        .team__nav_img span {
+                            background: #fff;
+                        }
+                        .team__nav_persone {
+                            border-right: none;
+                        }
+                        .team__nav_name,
+                        .team__nav_spec {
+                            color: $grey-3a;
+                        }
+                    }
+                }
+                
+            }
+            &__card {
+                flex-direction: row;
+                width: 100% !important;
+                &::before {
+                    border-top: 35px solid transparent;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        &-page {
+            &__card {
+                flex-direction: column;
+                align-items: center;
+                width: 100% !important;
+            }
+            &__nav {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .team {
+        &-page {
+            &__card {
+                // flex-direction: row;
+                width: 100% !important;
+                &_btns {
+                    margin: 0;
+                    & .btn_team {
+                        margin-top: 16px;
+                        max-width: 220px;
+                    }
+                }
+            }
+            &__photo {
+                width: 205px;
+                height: 252px;
+                &>*,&>*>* {
+                    max-height: 254px;
+                }
+            }
+            & .team__content_name {
+                font-size: 20px;
+            }
+            & .team__content_list {
+                margin-top: 17px;
+            }
+        }
+    }
+}

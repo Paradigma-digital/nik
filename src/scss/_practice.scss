@@ -1,0 +1,90 @@
+.practice {
+    &__card {
+        padding-bottom: 69px;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid $grey-ed;
+        &:not(:first-child) {
+            padding-top: 73px;
+        }
+        &_content {
+            max-width: 66%;
+            margin-right: 30px;
+        }
+        &_title {
+            font-size: 30px;
+            line-height: 120%;
+            color: $grey-3a;
+        }
+        &_descr {
+            margin-top: 16px;
+            font-size: 18px;
+            line-height: 170%;
+            color: $grey-3a;
+        }
+        &_btn {
+            margin-top: 32px;
+            justify-content: flex-start;
+            &-mob {
+                display: none;
+            }
+        }
+        &_persone {
+            display: flex;
+            justify-content: flex-start;
+            &_wrapp {
+                & > .name {
+                    width: 90%;
+                    font-size: 18px;
+                    line-height: 130%;
+                    color: $grey-3a;
+                }
+                & > .spec,
+                & > .category {
+                    font-size: 14px;
+                    line-height: 120%;
+                    color: $grey-aa;
+                }
+                & > .spec {
+                    margin-top: 8px;
+                }
+                & > .category {
+                    margin-top: 3px;
+                }
+            }
+        }
+        &_photo {
+            width: 55px;
+            height: 55px;
+            padding-top: 10px;
+            margin-right: 19px;
+            border-radius: 50%;
+            overflow: hidden;
+            & > * {
+                width: 100%;
+                object-fit: contain;
+            }
+            & > * > * {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+    }
+    &_slider {
+        &__wrapper {
+            overflow: hidden;
+        }
+    }
+}
+
+/*page*/
+.practice {
+    &__nav {
+        margin-top: -25px;
+    }
+    &__left-nav {
+        padding-right: 52px;
+        padding-bottom: 170px;
+    }
+}

@@ -1,0 +1,88 @@
+.thank {
+    width: 100%;
+    padding-top: 90px; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    &__title {
+        font-size: 65px;
+    }
+    &__slider {
+        background: #FFFFFF;
+        position: relative;
+        margin-top: 38px;
+        &_prev {
+            left: -25px;
+            top: 190px;
+        }
+        &_next {
+            right: -25px;
+            top: 190px;
+        }
+        &-wrapp {
+            overflow: hidden;
+            position: relative;
+        }
+    }
+    &__slide {
+        
+        // display: grid;
+        // grid-template: minmax(auto, 560px) / repeat(4, minmax(auto, 317px));
+        &_item {
+            width: 560px;
+            // height: 317px;
+            padding-bottom: 54px;
+            padding-top: 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            background: transparent;
+            &:not(:last-child) {
+                border-right: 1px solid $grey-ed;
+            } 
+        }
+        &_frame {
+            width: 247px;
+            height: 350px;
+            background: url(../img/thank/frame.png) center;
+            padding: 17px;
+        }
+        &_text {
+            max-width: 250px;
+            margin-top: 22px;
+            font-size: 18px;
+            line-height: 130%;
+            color: $grey-3a;
+            text-align: center;
+        }
+        &_plus {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            margin-top: 27px;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $red;
+            &>span {
+                margin-right: 10px;
+            }
+        }
+    }
+    &-page {
+        &__cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            & > .thank_slider_item {
+                width: 25%;
+                border: none;
+            }
+        }
+    }
+    
+}

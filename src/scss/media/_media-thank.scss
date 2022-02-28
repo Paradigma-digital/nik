@@ -1,0 +1,59 @@
+// @media (max-width: 1365px) {
+
+// }
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .thank-page {
+        &__cards {
+            & > .thank_slider_item {
+                width: 30%;
+            }
+        }
+    }
+}
+// @media (max-width: 992px)
+@media (max-width: 768px) {
+    .thank-page {
+        &__cards {
+            & > .thank_slider_item {
+                width: 50% !important;
+            }
+        }
+    }
+}
+@media (max-width: 540px) {
+    .thank-page {
+        &__cards {
+            & > .thank_slider_item {
+                // width: 50%;
+                padding-top: 0;
+                margin-bottom: 37px;
+                & > .thank__slide_frame {
+                    background: url(../img/thank/frame.png) center/contain;
+                    width: 149px;
+                    height: 210px;
+                    padding: 7px;
+                    &>*,&>*>* {
+                        width: 133px;
+                        height: 196px;
+                        object-fit: contain;
+                    }
+                }
+                & > .thank__slide_text {
+                    width: 94%;
+                    font-size: 14px;
+                    line-height: 110%;
+                }
+                & > .thank__slide_plus {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

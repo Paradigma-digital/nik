@@ -1,0 +1,39 @@
+.promo {
+    max-width: 1441px;
+    margin: 0 auto;
+    padding-top: 179px;
+    height: 749px;
+    background: linear-gradient(90deg, #F1EEEA 15.53%, rgba(241, 238, 234, 0) 43.21%), url('../img/promo/prmon-bg.png') bottom right/cover no-repeat;
+    &__wrapper{
+        width: 510px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__subtitle{
+        margin-top: 61px;
+        width: 310px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > span {
+            display: block;
+            width: 40px;
+            border-top: 1px solid $red;
+        }
+        & > p {
+            font-size: 18px;
+            line-height: 110%;
+            text-align: center;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $red-2a;
+        }
+    }
+    &__title{
+        margin-top: 29px;
+        line-height: 90%;
+    }
+}

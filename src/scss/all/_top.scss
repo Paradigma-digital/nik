@@ -1,0 +1,10 @@
+.top {
+    border-top: 1px solid $grey-ed;
+    padding: 24px 0 40px;
+    &__breadcrumbs{
+        font-size: 14px;
+        line-height: 150%;
+        color: $grey-b7;
+        text-align: center;
+    }
+}

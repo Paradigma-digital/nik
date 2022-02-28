@@ -1,0 +1,97 @@
+.services {
+    background: $grey-f8;
+    position: relative;
+    &__wrapper {
+        width: 95%;
+        max-width: 1266px;
+        background: #fff;
+        position: absolute;
+        top: -190px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 83px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        border-top: 1px solid $grey-ed;
+        margin-top: 48px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 50%;
+        padding-bottom: 76px;
+        &:first-child {
+            border-right: 1px solid $grey-ed;
+        }
+        &::before,
+        &:after {
+            content: '';
+            display: block;
+            width: 50px;
+            border-top: 1px solid $red;
+            position: absolute;
+            top: 138px;
+            z-index: 1;
+        }
+        &::before {
+            left: 110px;
+        }
+        &::after {
+            right: 110px;
+        }
+        &_img {
+            margin-top: -50px;
+            width: 250px;
+            height: 316px;
+            border-radius: 250px 250px 0px 0px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            transform: scale(1);
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+            &>.logo {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+            }
+        }
+        &_title {
+            margin-top: 28px;
+            font-size: 40px;
+            line-height: 120%;
+            text-align: center;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            transition: color 0.4s ease-in-out;
+            
+            &:hover {
+                color: $red-hover;
+            }
+        }
+        &_link {
+            margin-top: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            line-height: 110%;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $red;
+            &>span {
+                padding-right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+.college {
+    &__title {
+        margin-top: 65px;
+        font-size: 45px;
+        line-height: 120%;
+        text-align: center;
+        color: $grey-3a;
+    }
+    &__promo {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &__message {
+        & > .result__decor {
+            margin-top: 73px;
+            position: relative;
+            & > span {
+                border-top: 1px solid $red;
+            }
+            &::before {
+                content: '';
+                display: block;
+                height: 220px;
+                border-left: 1px solid $red;
+                position: absolute;
+                top: 27px;
+                left: 11.5%;
+            }
+            &::after {
+                content: '';
+                display: block;
+                height: 220px;
+                border-right: 1px solid $red;
+                position: absolute;
+                top: 27px;
+                right: 11.5%;
+            }
+        }
+        &_wrapper {
+            padding-bottom: 90px;
+            margin: 0 auto;
+            margin-top: 75px;
+            max-width: 1110px;
+            background: #FFFFFF;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+        }
+        &_video {
+            margin-top: -50px;
+            width: 834px;
+            height: 475px;
+            box-shadow: none;
+            &>*,
+            &>*>*{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &_list {
+            margin-top: 52px;
+            max-width: 834px;
+        }
+        &_item {
+            padding-left: 60px;
+            font-size: 18px;
+            line-height: 170%;
+            color:$grey-3a;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+            &::before {
+                content: '';
+                display: block;
+                background: url('../img/college/list.png') center center/contain no-repeat;
+                width: 29px;
+                height: 39px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    &__history {
+        text-align: center;
+        & .college__title {
+            margin-top: 77px;
+        }
+        &_year {
+            margin-top: 40px;
+            display: inline-block;
+            font-size: 45px;
+            line-height: 120%;
+            color: $red;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                width: 50px;
+                border-bottom: 1px solid $red;
+                position: absolute;
+                top: 26px;
+                left: -80px;
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 50px;
+                border-bottom: 1px solid $red;
+                position: absolute;
+                top: 26px;
+                right: -80px;
+            }
+        }
+        &_text {
+            max-width: 834px;
+            margin: 0 auto;
+            margin-top: 6px;
+            & > p {
+                font-size: 18px;
+                line-height: 170%;
+                color: $grey-3a;
+                text-align: left;
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &_subtitle {
+            max-width: 834px;
+            margin: 0 auto;
+            margin-top: 27px;
+            font-size: 14px;
+            line-height: 110%;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $red;
+            text-align: left;
+        }
+        &_list {
+            max-width: 834px;
+            margin: 0 auto;
+            margin-top: 18px;
+            text-align: left;
+            &  > li {
+                padding-left: 60px;
+                position: relative;
+                font-size: 18px;
+                line-height: 170%;
+                color: $red;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    border-bottom: 1px solid $red;
+                    position: absolute;
+                    left: 0;
+                    top: 15px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    &__photos {
+        & .result__decor {
+            position: relative;
+            & > span {
+                border-color: $red;
+            }
+            &::before {
+                content: '';
+                display: block;
+                height: 301px;
+                border-left: 1px solid $red;
+                position: absolute;
+                top: 27px;
+                left: 129px;
+            }
+            &::after {
+                content: '';
+                display: block;
+                height: 301px;
+                border-right: 1px solid $red;
+                position: absolute;
+                top: 27px;
+                right: 129px;
+            }
+        }
+        &_slider {
+            margin-top: 151px;
+            background: $red;
+            height: 650px;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                height: 100%;
+                border-left: 1px solid #fff;
+                position: absolute;
+                top: 0;
+                left: 129px;
+            }
+            &::after {
+                content: '';
+                display: block;
+                height: 100%;
+                border-right: 1px solid #fff;
+                position: absolute;
+                top: 0;
+                right: 129px;
+            }
+            &_wrapper {
+                width: 833px;
+                height: 550px;
+                position: absolute;
+                top: -100px;
+                left: calc(50% - 417px);
+                & > .college__photos_slider_prev {
+                    top: 250px;
+                    left: -25px;
+                }
+                & > .college__photos_slider_next {
+                    top: 250px;
+                    right: -25px;
+                }
+            }
+            &>.divider {
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid #fff;
+                position: absolute;
+                left: 0;
+                bottom: 100px;
+            }
+        }
+        &_slide {
+            box-shadow: 50px 70px 100px rgba(0,0,0,.5);
+            &>*,
+            &>*>* {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
