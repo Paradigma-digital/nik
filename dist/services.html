@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220225115036">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220228203422">
     <title>Услуги</title>
 </head>
 <body>
@@ -168,32 +168,32 @@
                 <div class="services-page__wrapper">
                     <ul class="page__nav persone__nav services-page__nav" > 
                         <li >
-                            <a href="#" class="active">Уголовные дела</a>
+                            <a href="#ugolovni" class="active">Уголовные дела</a>
                         </li>
                         <li>
-                            <a href="#">Семейные споры</a>
+                            <a href="#spor">Семейные споры</a>
                         </li>
                         <li>
-                            <a href="#">Банкротство физ лиц</a>
+                            <a href="#bank">Банкротство физ лиц</a>
                         </li>
                         <li>
-                            <a href="#">Имущественные споры</a>
+                            <a href="#imush">Имущественные споры</a>
                         </li>
                         <li>
-                            <a href="#">Гражданские дела</a>
+                            <a href="#grazh">Гражданские дела</a>
                         </li>
                     </ul>
                     <div class="services-page__content">
                         <div class="services-page__item">
-                            <div class="persone__about_wrapper">
+                            <div class="persone__about_wrapper accordion-mob">
                                 <div class="persone__about_img">
                                     <picture><source srcset="img/persone/item-1.webp" type="image/webp"><img src="img/persone/item-1.png" alt=""></picture>
                                 </div>
                                 <div class="persone__about_right">
-                                    <h4 class="persone__about_subtitle">
+                                    <h4 id="ugolovni" class="persone__about_subtitle accordion-show">
                                         Уголовные дела
                                     </h4>
-                                    <ul class="persone__about_list">
+                                    <ul class="persone__about_list accordion-panel" data-show="false">
                                         <li class="persone__about_list-item">
                                             Грабежи
                                         </li>
@@ -233,15 +233,15 @@
                         </div>
 
                         <div class="services-page__item">
-                            <div class="persone__about_wrapper">
+                            <div class="persone__about_wrapper accordion-mob">
                                 <div class="persone__about_img">
                                     <picture><source srcset="img/services/page/item-2.webp" type="image/webp"><img src="img/services/page/item-2.png" alt=""></picture>
                                 </div>
                                 <div class="persone__about_right">
-                                    <h4 class="persone__about_subtitle">
+                                    <h4 id="spor" class="persone__about_subtitle accordion-show">
                                         Семейные споры
                                     </h4>
-                                    <ul class="persone__about_list">
+                                    <ul class="persone__about_list accordion-panel" data-show="false">
                                         <li class="persone__about_list-item">
                                             Раздел совместно нажитого имущества
                                         </li>
@@ -263,12 +263,12 @@
                         </div>
 
                         <div class="services-page__item">
-                            <div class="persone__about_wrapper">
+                            <div class="persone__about_wrapper accordion-mob">
                                 <div class="persone__about_img">
                                     <picture><source srcset="img/services/page/item-3.webp" type="image/webp"><img src="img/services/page/item-3.png" alt=""></picture>
                                 </div>
                                 <div class="persone__about_right">
-                                    <h4 class="persone__about_subtitle">
+                                    <h4 id="bank" class="persone__about_subtitle accordion-show">
                                         Банкротство физ лиц
                                     </h4>
                                     
@@ -277,16 +277,16 @@
                         </div>
 
                         <div class="services-page__item">
-                            <div class="persone__about_wrapper">
+                            <div class="persone__about_wrapper accordion-mob">
                                 <div class="persone__about_img">
                                     <picture><source srcset="img/services/page/item-4.webp" type="image/webp"><img src="img/services/page/item-4.png" alt=""></picture>
                                 </div>
                                 <div class="persone__about_right">
-                                    <h4 class="persone__about_subtitle">
+                                    <h4 id="imush" class="persone__about_subtitle accordion-show">
                                         Имущественные споры
                                     </h4>
                                     <ul class="persone__about_list">
-                                        <li class="persone__about_list-item">
+                                        <li class="persone__about_list-item accordion-panel" data-show="false">
                                             Споры с застройщиками по ДДУ
                                         </li>
                                     </ul>
@@ -296,15 +296,15 @@
 
 
                         <div class="services-page__item">
-                            <div class="persone__about_wrapper">
+                            <div class="persone__about_wrapper accordion-mob">
                                 <div class="persone__about_img">
                                     <picture><source srcset="img/services/page/item-5.webp" type="image/webp"><img src="img/services/page/item-5.png" alt=""></picture>
                                 </div>
                                 <div class="persone__about_right">
-                                    <h4 class="persone__about_subtitle">
+                                    <h4 id="grazh" class="persone__about_subtitle accordion-show">
                                         Гражданские дела
                                     </h4>
-                                    <ul class="persone__about_list">
+                                    <ul class="persone__about_list accordion-panel" data-show="false">
                                         <li class="persone__about_list-item">
                                             Наследственные споры
                                         </li>
@@ -493,7 +493,7 @@
                 </div>
             </div>
             <div class="footer__map" id="footer__map">
-                <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af936f7e24d8b8140ee70bf50f95e30f51ccc786554c95f39aea071ad3af28c5a&amp;width=618&amp;height=450&amp;lang=ru_RU&amp;scroll=true&_v=20220225115036"></script> -->
+                <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af936f7e24d8b8140ee70bf50f95e30f51ccc786554c95f39aea071ad3af28c5a&amp;width=618&amp;height=450&amp;lang=ru_RU&amp;scroll=true&_v=20220228203422"></script> -->
                 <!-- <picture><source srcset="img/footer/map.webp" type="image/webp"><img src="img/footer/map.png" alt=""></picture> -->
             </div>
         </div>
@@ -652,10 +652,10 @@
             </div>
     </div>
 </div>
-<!-- <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_v=20220225115036" type="text/javascript">
+<!-- <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_v=20220228203422" type="text/javascript">
 </script> -->
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20220225115036"></script>
-    <script src="js/app.min.js?_v=20220225115036"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20220228203422"></script>
+    <script src="js/app.min.js?_v=20220228203422"></script>
 </body>
 </html>
 

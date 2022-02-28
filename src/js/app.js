@@ -31,6 +31,9 @@ import initMobTopNav from './modules/initMobTopNav.js';
 import initMobSecondNav from './modules/initMobSecondNav.js';
 
 
+import accordionAd from './modules/accordion.js';
+
+
 document.addEventListener('DOMContentLoaded', () => {
     
     isWebp();
@@ -66,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPublicSliderPersone();
     initReviewSlider();
     
+    accordionAd();
 
     try {
         initYMap();

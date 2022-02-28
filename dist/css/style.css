@@ -4829,6 +4829,10 @@ label[for=user_name] > .just-validate-error-label {
   margin-top: 0;
 }
 
+.desc-none {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .swiper-pagination {
     display: none;
@@ -6244,6 +6248,84 @@ label[for=user_name] > .just-validate-error-label {
 
   .college__title {
     margin-top: 26px;
+  }
+
+  .desc-none {
+    display: block;
+  }
+
+  .services-page {
+    overflow: hidden;
+  }
+
+  .services-page__wrapper {
+    position: relative;
+  }
+
+  .services-page__wrapper .services-page__nav {
+    display: none;
+  }
+
+  .services-page__bottom_video {
+    left: 0;
+    width: 100%;
+  }
+
+  .services-page__bottom_video img {
+    width: 100%;
+  }
+
+  .services-page__item .accordion-panel {
+    position: relative;
+    left: -134px;
+    padding-left: 20px;
+    width: 100vw;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s, margin 3s, easy-in-out;
+  }
+
+  .services-page__item .accordion-panel.show {
+    margin-top: 45px;
+    transition: max-height 1s, easy-in-out;
+  }
+
+  .services-page__item .persone__about_subtitle {
+    margin-top: 33px;
+  }
+
+  .services-page__item .persone__about_subtitle.accordion-show {
+    position: relative;
+  }
+
+  .services-page__item .persone__about_subtitle.accordion-show::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 9px;
+    background-image: url("/img/services/arr.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s;
+  }
+
+  .services-page__item .persone__about_subtitle.accordion-show.show::after {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+
+  .services-page__item .persone__about_wrapper {
+    position: relative;
+  }
+
+  .services-page__item .persone__about_img {
+    margin-right: 21px;
+    width: 100%;
+    height: 100%;
+    max-width: 93px;
+    max-height: 93px;
   }
 }
 
@@ -8243,6 +8325,49 @@ label[for=user_name] > .just-validate-error-label {
   .requisites__img > * > * {
     width: 330px;
     height: 293px;
+  }
+
+  .services-page {
+    padding-bottom: 80px;
+  }
+
+  .services-page__wrapper .persone__about_subtitle {
+    padding-right: 100px;
+  }
+
+  .services-page__wrapper .persone__about_subtitle.accordion-show::after {
+    right: 25px;
+  }
+
+  .services-page__bottom {
+    padding-top: 0;
+    margin-top: 100px;
+  }
+
+  .services-page__bottom_video {
+    position: static;
+    margin-bottom: 23px;
+    height: auto;
+  }
+
+  .services-page__bottom_wrapper {
+    padding: 0;
+  }
+
+  .services-page__bottom_title {
+    padding: 0px 20px;
+    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .services-page__bottom_text {
+    padding: 0px 20px;
+    margin-bottom: 20px;
+  }
+
+  .services-page__bottom .btn_plus {
+    margin-top: 0;
   }
 }
 
