@@ -112,6 +112,7 @@
         display: none;
     }
     &__cards {
+        padding-bottom: 96px;
         display: grid;
         grid-template: repeat(5, 260px) / repeat(4, 294px);
         gap: 50px 30px;

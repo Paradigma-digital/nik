@@ -2214,6 +2214,7 @@ label[for=user_name] > .just-validate-error-label {
 }
 
 .clients__cards {
+  padding-bottom: 96px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 260px 50px 260px 50px 260px 50px 260px 50px 260px;
@@ -7925,7 +7926,10 @@ img {
     height: 250px;
     margin-right: 0;
     margin-top: -20px;
-    overflow: hidden;
+  }
+
+  .footer__map > * {
+    height: 250px !important;
   }
 
   .header.not-main .header__social {

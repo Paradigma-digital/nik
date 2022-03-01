@@ -45,11 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
     answerService();
 
     initMobTopNav();
-
-    initMobSecondNav('.achievements-page__nav > .page__nav_item', '.achievements-page__nav > .page__nav_arrow', 'page__nav_item-active');
-    initMobSecondNav('.team-page__nav > li > a', '.team-page__nav  >.page__nav_arrow', 'page__nav_item-active');
-    initMobSecondNav('.persone__nav > li > a', '.persone__nav>.page__nav_arrow');
-    initMobSecondNav('.practice__left-nav > .page__nav_item', '.practice__left-nav > button.page__nav_arrow', 'page__nav_item-active');
+    try {
+        initMobSecondNav('.achievements-page__nav > .page__nav_item', '.achievements-page__nav > .page__nav_arrow', 'page__nav_item-active');
+        initMobSecondNav('.team-page__nav > li > a', '.team-page__nav  >.page__nav_arrow', 'page__nav_item-active');
+        initMobSecondNav('.persone__nav > li > a', '.persone__nav>.page__nav_arrow');
+        initMobSecondNav('.practice__left-nav > .page__nav_item', '.practice__left-nav > button.page__nav_arrow', 'page__nav_item-active');
+    }catch(e){}
+    
 
     // changeSelects('.page__nav_select');
 
@@ -70,10 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
     initReviewSlider();
     
     
-
     try {
         initYMap();
     }catch(e){}
+    
     try {
         initYMapContacts();
     }catch(e){}

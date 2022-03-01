@@ -12,13 +12,13 @@ const initYMap = () => {
               iconImageHref: 'img/footer/map-icon.png',
               iconImageSize: [60, 79],
               iconImageSize: document.body.clientWidth <= 768 ? [40, 52] : [60, 79],
-              iconImageOffset: [-14, -40],
+              iconImageOffset: [-14, -40]
      
           });
             myMap.geoObjects.add(myPlacemark);
         }
     }
 
-
+console.log('map');
 }
 export default initYMap;
