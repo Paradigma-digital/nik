@@ -32,30 +32,33 @@ const accordionAd = () => {
     if (accordion) {
         accordion.forEach(item => {
             const accordionShow = item.querySelector('.accordion-show');
-            accordionShow.addEventListener('click', (e)=> {
-                e.preventDefault()
-                accordionShow.classList.toggle('show')
-                // Получение всех дочерних элементов
-                let accordionChildren = Array.from(accordionShow.closest('.accordion-mob').children)
-                console.log(accordionChildren);
-                accordionChildren.map(i=> {
-                    if( i.querySelector('.accordion-panel') ) {
-                        let item = i.querySelector('.accordion-panel');
-                        if (item.getAttribute('data-show') === 'false') {
-                            console.log(false);
-                            item.setAttribute('data-show', true)
-                            item.classList.toggle('show')
-                            item.style.maxHeight = item.scrollHeight + 'px'
-                        } else {
-                            console.log(true);
-                            item.setAttribute('data-show', false)
-                            item.classList.toggle('show')
-                            item.style.maxHeight = 0 + 'px'
+            if(accordionShow) {
+                accordionShow.addEventListener('click', (e)=> {
+                    e.preventDefault()
+                    accordionShow.classList.toggle('show')
+                    // Получение всех дочерних элементов
+                    let accordionChildren = Array.from(accordionShow.closest('.accordion-mob').children)
+                    console.log(accordionChildren);
+                    accordionChildren.map(i=> {
+                        if( i.querySelector('.accordion-panel') ) {
+                            let item = i.querySelector('.accordion-panel');
+                            if (item.getAttribute('data-show') === 'false') {
+                                console.log(false);
+                                item.setAttribute('data-show', true)
+                                item.classList.toggle('show')
+                                item.style.maxHeight = item.scrollHeight + 'px'
+                            } else {
+                                console.log(true);
+                                item.setAttribute('data-show', false)
+                                item.classList.toggle('show')
+                                item.style.maxHeight = 0 + 'px'
+                            }
                         }
-                    }
-                    
+                        
+                    })
                 })
-            })
+            }
+            
         });
     }
     

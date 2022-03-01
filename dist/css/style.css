@@ -4833,6 +4833,14 @@ label[for=user_name] > .just-validate-error-label {
   display: none;
 }
 
+.desc-none {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 @media (min-width: 992px) {
   .swiper-pagination {
     display: none;
@@ -5339,6 +5347,10 @@ label[for=user_name] > .just-validate-error-label {
 
   .college__message > .result__decor::after {
     right: 3%;
+  }
+
+  .service__wrapper > .services-page__nav {
+    display: none;
   }
 }
 
@@ -6326,6 +6338,339 @@ label[for=user_name] > .just-validate-error-label {
     height: 100%;
     max-width: 93px;
     max-height: 93px;
+  }
+
+  .page__gradient-top {
+    padding-top: 0;
+    background: none;
+    background-color: transparent;
+  }
+
+  .desc-none {
+    display: block;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .service {
+    padding-bottom: 0;
+  }
+
+  .service__guarantee_wrapper {
+    flex-direction: column;
+  }
+
+  .service__title {
+    margin-bottom: 14px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .service__promo {
+    padding: 0px 20px;
+    padding-top: 110px;
+    flex-wrap: wrap;
+    background-color: #F1EEEA;
+  }
+
+  .service__promo_wrapper {
+    padding-top: 0px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .service__promo_title {
+    padding-top: 48px;
+    margin-bottom: 14px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .service__promo_subtitle {
+    margin-top: 14px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .service__promo_img {
+    margin: auto;
+    height: auto;
+  }
+
+  .service__promo_img::before {
+    display: none;
+  }
+
+  .service__promo_wrapper .result__decor {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
+  .service__form {
+    padding: 78px 20px 83px 20px;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .service__form_title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .service__form .btn_wrapp {
+    margin-top: -25px;
+    flex-direction: column-reverse;
+  }
+
+  .service__form .btn_wrapp .btn_form {
+    margin-right: 0;
+    margin-top: 30px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .service__form textarea {
+    margin-top: 0;
+  }
+
+  .service__content {
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .service__work_video {
+    height: auto;
+  }
+
+  .service__form label[for=user_name] > input,
+  .service__form label[for=user_phone] > input {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .service__form label {
+    display: flex;
+    margin-bottom: 66px;
+  }
+
+  .service__form span {
+    bottom: 12px;
+    font-size: 16px;
+  }
+
+  .service__price {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .service__price_title {
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .service__price_header {
+    display: none;
+  }
+
+  .service__price_item {
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .service__price_item p {
+    width: 100%;
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .service__price_item span {
+    width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+  }
+
+  .service__price_descr {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .service__about {
+    padding-top: 15px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: auto;
+  }
+
+  .service__about_video {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+
+  .service__about_descr {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .service .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service__guarantee {
+    padding: 74px 20px 40px 20px;
+    background: linear-gradient(180deg, #F2EFEB 0%, rgba(242, 239, 235, 0) 68.1%);
+  }
+
+  .service__guarantee_photo {
+    margin-top: 20px;
+  }
+
+  .service_list > li {
+    padding-left: 75px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .service__work {
+    padding: 40px 20px;
+    padding-bottom: 0;
+    background-color: #fff;
+  }
+
+  .service__italic {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .service__list,
+  .service__olist {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .service__title-h4,
+  .service__title-h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .service__team {
+    padding-top: 65px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 0;
+    background-color: #fff;
+  }
+
+  .service__articles {
+    padding: 75px 20px 71px 20px;
+    background-color: #fff;
+  }
+
+  .service__articles_list > li {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .service__practice {
+    padding: 65px 0px 104px 0px;
+  }
+
+  .service__practice .btn_slider {
+    display: none;
+  }
+
+  .service__practice .service__title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .service__practice_slider {
+    width: 100%;
+  }
+
+  .service__practice_slider .practice_slider__item {
+    padding: 28px 20px 32px;
+    max-width: 100%;
+  }
+
+  .service__thank {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  .service__thank .service__title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .service__answers {
+    padding-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+  }
+
+  .service__answers_btn {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .service__answers_item {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 35px;
+  }
+
+  .service__answers_item .plus {
+    top: 25px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .persone__about_slider .thank_slider_item {
+    border: none;
+    height: auto;
+  }
+
+  .persone__about_slider .btn_slider {
+    display: none;
+  }
+
+  .publication__content_photo {
+    padding-bottom: 20px;
+  }
+
+  .team-page__card .team__content_name {
+    margin-top: 29px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .team-page__card_btns .btn_team {
+    margin-bottom: 6px;
+  }
+
+  .team-page__card .team__content_wrapper {
+    margin-top: 0;
+  }
+
+  .service__team .team-page__photo {
+    margin: auto;
   }
 }
 

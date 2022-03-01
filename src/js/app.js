@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPublicSliderPersone();
     initReviewSlider();
     
-    accordionAd();
+    
 
     try {
         initYMap();
@@ -111,6 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     validateForm('#footer__form #user_phone', '#footer__form', '.footer__user_name', '.footer__user_mess', '.footer__user_phone', '.footer__user_email');
     validateForm('.modal__user_phone', '#modal__form', '.modal__user_name', '.modal__user_mess', '.modal__user_phone', '.modal__user_email');
+
+    accordionAd();
+
 
 })
 
