@@ -18,7 +18,5 @@ const initYMap = () => {
             myMap.geoObjects.add(myPlacemark);
         }
     }
-
-console.log('map');
 }
 export default initYMap;

@@ -12,7 +12,7 @@ const initClientsSlider = () => {
         },
         breakpoints: {
             1200: {
-            slidesPerView: 2,
+            slidesPerView: 2
             },
             992: {
             slidesPerView: 1,

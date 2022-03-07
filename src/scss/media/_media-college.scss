@@ -121,6 +121,11 @@
     }
 }
 
-@media (max-width: 540px) {
-
+@media (max-width: 412px) {
+    .result__video {
+        width: 100%;
+    }
+    .college__history_year::before, .college__history_year::after {
+        display: none;
+    }
 }

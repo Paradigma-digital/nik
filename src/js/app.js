@@ -32,6 +32,8 @@ import initMobSecondNav from './modules/initMobSecondNav.js';
 
 
 import accordionAd from './modules/accordion.js';
+import filterAdvocats from './modules/filterAdvokats.js';
+// import scrollLink from './modules/scrollLink.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -55,8 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // changeSelects('.page__nav_select');
 
-    initSlider('.service__thank_slider', '.thank_slider_prev', '.thank_slider_next', 3)
-    initSlider('.service__practice_slider', '.practice_slider_prev', '.practice_slider_next', 2)
+    
+    if (window.innerWidth > 768) {
+        initSlider('.service__thank_slider', '.thank_slider_prev', '.thank_slider_next', 3)
+        initSlider('.service__practice_slider', '.practice_slider_prev', '.practice_slider_next', 2)
+    } else {
+        initSlider('.service__thank_slider', '.thank_slider_prev', '.thank_slider_next', 1)
+        initSlider('.service__practice_slider', '.practice_slider_prev', '.practice_slider_next', 1)
+    }
     // initSlider('.persone__about_slider', '.practice_slider_prev', '.practice_slider_next', 2)
 
     initSlider('.college__photos_slider_wrapper > .swiper', '.college__photos_slider_prev', '.college__photos_slider_next', 1, true)
@@ -109,13 +117,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     showModal('.btn_team', '.modal__form');
     showModal('.btn_header', '.modal__form', '.modal__form_mob');
-    showModal('.thank__slide_item', '.modal__thank', false);
+    showModal('.review .thank__slide_item', '.modal__thank', false);
+    showModal('.thank .thank__slide_item', '.modal__thank__achievements', false);
+    showModal('.achievements .thank__slide_item', '.modal__thank__achievements', false);
 
     validateForm('#footer__form #user_phone', '#footer__form', '.footer__user_name', '.footer__user_mess', '.footer__user_phone', '.footer__user_email');
     validateForm('.modal__user_phone', '#modal__form', '.modal__user_name', '.modal__user_mess', '.modal__user_phone', '.modal__user_email');
 
     accordionAd();
-
+    filterAdvocats();
 
 })
 

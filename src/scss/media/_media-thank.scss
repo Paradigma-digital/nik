@@ -27,11 +27,12 @@
         }
     }
 }
+
 @media (max-width: 540px) {
     .thank-page {
         &__cards {
             & > .thank_slider_item {
-                // width: 50%;
+                width: 100% !important;
                 padding-top: 0;
                 margin-bottom: 37px;
                 & > .thank__slide_frame {
@@ -55,5 +56,8 @@
                 }
             }
         }
+    }
+    .persone__about_slider .thank_slider_item {
+        width: 100% !important;
     }
 }

@@ -209,4 +209,13 @@
             background: transparent;
         }
     }
+    
+    &.not-bg {
+        background-color: transparent;
+        .header__logo {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }

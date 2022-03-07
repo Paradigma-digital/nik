@@ -643,6 +643,17 @@
                 background: transparent;
                 padding-bottom: 100px;
             }
+            .swiper-pagination {
+                display: flex;
+                justify-content: center;
+                bottom: 30px;
+                left: 0;
+                transform: translate(0, 0);
+                .swiper-pagination-bullet {
+                    border: 1px solid #9a211d;
+                    border-radius: 25px;
+                }
+            }
         }
         &__slide {
             background: #fff;
@@ -943,6 +954,7 @@
                 width: 350px !important;
             }
         }
+        
     }
     .bottom {
         padding-top: 46px;
@@ -1019,6 +1031,13 @@
                 }
             }
         }
+    }
+    .modal__thank__achievements .modal__thank_wrapper{
+        width: 100%;
+    }
+     .modal__thank_wrapper>.thank__slide_frame {
+        width: 100%;
+        height: 100%;
     }
 }
 @media (max-width: 540px) {

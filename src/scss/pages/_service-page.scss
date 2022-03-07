@@ -1,13 +1,26 @@
 .service {
     padding-bottom: 100px;
+    .thank_slider {
+        &__wrapper {
+            overflow: visible;
+        }
+    }
+    .practice_slider__wrapper {
+        overflow: visible;
+    }
     & .container {
         position: relative;
+    }
+    &__content {
+        width: 100%;
+        max-width: calc(100% - 324px);
     }
     &__promo {  
         display: flex;
         justify-content: flex-start;
         max-width: 1366px;
         margin: 0 auto;
+        height: calc(100vh - 176px);
         &_wrapper {
             width: 449px;
             padding-left: 52px;
@@ -40,9 +53,8 @@
             color: $grey-3a;
         }
         &_img {
-            width: 100%;
-            height: 650px;
             position: relative;
+            width: 100%;
             object-fit: contain;
             margin-left: -61px;
             &::before {
@@ -75,10 +87,12 @@
     }
     &__wrapper {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: flex-start;
         & > .services-page__nav {
             z-index: 2;
+            width: 100%;
+            max-width: 280px;
         }
     }
     &__title {
@@ -94,9 +108,6 @@
         &-h5 {
             font-size: 24px;
         }
-    }
-    &__content {
-        flex: 1;
     }
     &__about {
         background: #FFFFFF;
@@ -407,15 +418,15 @@
     &__practice {
         padding-top: 83px;
         &_slider {
-            width: 944px;
             overflow: hidden;
+            &__item {
+                width: 100%;
+                max-width: 471px;
+            }
         }
     }
     &__thank {
         padding-top: 70px;
-        & .thank_slider__wrapper {
-            width: 942px;
-        }
         & .service__thank_slider {
             overflow: hidden;
             & .swiper-slide {
@@ -497,4 +508,5 @@
             }
         }
     }
+    
 }

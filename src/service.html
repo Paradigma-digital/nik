@@ -5,12 +5,13 @@
 })
 <body>
   @@include('html/header.html', {
-    "class" : "main"
+    "class" : "main not-main not-bg"
     })
     <main class="page__gradient-top">
         @@include('html/top.html', {
             "src": "Услуги для физических лиц — Адвокат по уголовным делам",
             "title": "",
+            "class": "mob-none"
         })
 
         <section class="service__promo">
@@ -47,35 +48,35 @@
                             <a href="#" class="active">Адвокат по уголовным делам</a>
                         </li>
                         <li >
-                            <a href="#">Обращение Адвокатаи Принцип работы / преимущества</a>
+                            <a href="#anchor1">Обращение Адвокатаи Принцип работы / преимущества</a>
                         </li>
                         <li>
-                            <a href="#">Блочная перелинковка на подкатегории (пример, основная - семейные споры, подкатегория - раздел имущества)</a>
+                            <a href="#anchor2">Блочная перелинковка на подкатегории (пример, основная - семейные споры, подкатегория - раздел имущества)</a>
                         </li>
                         <li>
-                            <a href="#">Адвокаты</a>
+                            <a href="#anchor3">Адвокаты</a>
                         </li>
                         <li>
-                            <a href="#">Прайс</a>
+                            <a href="#anchor4">Прайс</a>
                         </li>
                         <li>
-                            <a href="#">Примеры из практики</a>
+                            <a href="#anchor5">Примеры из практики</a>
                         </li>
                         <li>
-                            <a href="#">Вопрос-ответ</a>
+                            <a href="#anchor6">Вопрос-ответ</a>
                         </li>
                         <li>
-                            <a href="#">Благодарственные письма</a>
+                            <a href="#anchor7">Благодарственные письма</a>
                         </li>
                         <li>
-                            <a href="#">Отзывы</a>
+                            <a href="#anchor8">Отзывы</a>
                         </li>
                         <li>
-                            <a href="#">Статьи</a>
+                            <a href="#anchor9">Статьи</a>
                         </li>
                     </ul>
                     <div class="service__content">
-                        <div class="service__about">
+                        <div id="anchor1" class="service__about">
                             <h2 class="service__title">
                                 Адвокат по уголовным делам
                             </h2>
@@ -116,7 +117,7 @@
                             </div>
                         </div>
     
-                        <div class="service__work">
+                        <div id="anchor2" class="service__work">
                             <h2 class="service__title">
                                 Что входит в работу адвоката H2
                             </h2>
@@ -192,7 +193,7 @@
                             </ol>
                         </div>
     
-                        <div class="service__team">
+                        <div id="anchor3" class="service__team">
                             <h2 class="service__title">
                                 Наши адвокаты по уголовным делам
                             </h2>
@@ -296,7 +297,7 @@
                             </div>
                         </div>
     
-                        <div class="service__articles">
+                        <div id="anchor9" class="service__articles">
                             <h2 class="service__title">
                                 Статьи
                             </h2>
@@ -336,7 +337,7 @@
                             </div>
                         </form>
     
-                        <div class="service__price">
+                        <div id="anchor4" class="service__price">
                             <h2 class="service__title">
                                 Стоимость услуг
                             </h2>
@@ -425,7 +426,7 @@
                            </p> 
                         </div>
     
-                        <div class="service__practice">
+                        <div id="anchor5" class="service__practice">
                             <h2 class="service__title">
                                 Практика
                             </h2>
@@ -562,7 +563,7 @@
                             </div>
                         </div>
     
-                        <div class="service__thank">
+                        <div id="anchor7" class="service__thank">
                             <h2 class="service__title">
                                 Благодарственные письма
                             </h2>
@@ -691,7 +692,7 @@
                             </div>
                         </div>
     
-                        <div class="service__answers">
+                        <div id="anchor6" class="service__answers">
                             <h2 class="service__title">
                                 Вопросы и ответы
                             </h2>

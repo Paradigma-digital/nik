@@ -426,22 +426,24 @@ body {
 }
 
 .modal_wrapper {
-  width: 1366px;
   background: #F1EEEA;
   padding: 135px 50px 117px 50px;
   padding-top: 135px;
   padding-bottom: 117px;
+  width: 100%;
+  max-width: 1366px;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
 .modal__form_wrapper {
-  width: 1366px;
   background: #F1EEEA;
   padding: 135px 50px 117px 50px;
   padding-top: 135px;
   padding-bottom: 117px;
+  width: 100%;
+  max-width: 1366px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -455,6 +457,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.modal__thank__achievements .modal__thank_wrapper {
+  width: auto;
+  background-color: transparent;
 }
 
 .modal__thank_wrapper {
@@ -896,6 +903,16 @@ body {
 
 .header.main .header__humburger {
   background: transparent;
+}
+
+.header.not-bg {
+  background-color: transparent;
+}
+
+.header.not-bg .header__logo {
+  position: static;
+  visibility: visible;
+  opacity: 1;
 }
 
 main.page {
@@ -2034,13 +2051,16 @@ label[for=user_name] > .just-validate-error-label {
   padding-bottom: 50px;
 }
 
+.team-page__nav li {
+  margin-bottom: 10px;
+}
+
 .team-page__cards {
   width: 100%;
 }
 
 .team-page__card {
   justify-content: flex-start;
-  max-height: 448px;
   max-width: unset;
   border-top: 1px solid #EDEDED;
   padding: 35px 0 50px;
@@ -2466,6 +2486,24 @@ label[for=user_name] > .just-validate-error-label {
   padding-top: 76px;
 }
 
+.achievements__wrapper .page__nav {
+  max-height: calc(100vh - 150px);
+  overflow-y: scroll;
+  height: 100vh;
+  margin-bottom: 20px;
+  min-width: 325px;
+}
+
+.achievements__wrapper .page__nav::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 5px;
+}
+
+.achievements__wrapper .page__nav::-webkit-scrollbar-thumb {
+  background-color: #c23631;
+  border-radius: 5px;
+}
+
 .achievements__nav_title {
   font-size: 16px;
   line-height: 110%;
@@ -2554,29 +2592,8 @@ label[for=user_name] > .just-validate-error-label {
   max-width: 942px;
 }
 
-.persone__content div[id]:before {
-  content: "";
-  width: 1px;
-  height: 50px;
-  display: block;
-  margin-top: -50px;
-}
-
 .persone__content div[id=card] {
-  border-top: 130px solid transparent;
-  margin-top: -130px;
   position: relative;
-}
-
-.persone__content div[id=card]:before {
-  content: "";
-  width: 942px;
-  height: 0;
-  display: block;
-  border-top: 1px solid #ededed;
-  position: absolute;
-  top: 50px;
-  left: 0;
 }
 
 .persone__general {
@@ -2659,7 +2676,7 @@ label[for=user_name] > .just-validate-error-label {
 }
 
 .persone__about_title {
-  margin-top: 65px;
+  padding-top: 65px;
   font-size: 45px;
   line-height: 120%;
   font-weight: normal;
@@ -2757,7 +2774,6 @@ label[for=user_name] > .just-validate-error-label {
 .persone__about_slider .practice_slider__wrapper {
   display: flex;
   justify-content: flex-start;
-  overflow: hidden;
 }
 
 .persone__about_slider .practice_slider__item {
@@ -3421,6 +3437,10 @@ label[for=user_name] > .just-validate-error-label {
 
 .publication__date > .publications__item_date {
   width: 78px;
+}
+
+.publication .publication__content_category {
+  display: none;
 }
 
 .publication__content {
@@ -4242,8 +4262,21 @@ label[for=user_name] > .just-validate-error-label {
   padding-bottom: 100px;
 }
 
+.service .thank_slider__wrapper {
+  overflow: visible;
+}
+
+.service .practice_slider__wrapper {
+  overflow: visible;
+}
+
 .service .container {
   position: relative;
+}
+
+.service__content {
+  width: 100%;
+  max-width: calc(100% - 324px);
 }
 
 .service__promo {
@@ -4251,6 +4284,7 @@ label[for=user_name] > .just-validate-error-label {
   justify-content: flex-start;
   max-width: 1366px;
   margin: 0 auto;
+  height: calc(100vh - 176px);
 }
 
 .service__promo_wrapper {
@@ -4291,9 +4325,8 @@ label[for=user_name] > .just-validate-error-label {
 }
 
 .service__promo_img {
-  width: 100%;
-  height: 650px;
   position: relative;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   margin-left: -61px;
@@ -4332,12 +4365,14 @@ label[for=user_name] > .just-validate-error-label {
 
 .service__wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .service__wrapper > .services-page__nav {
   z-index: 2;
+  width: 100%;
+  max-width: 280px;
 }
 
 .service__title {
@@ -4356,10 +4391,6 @@ label[for=user_name] > .just-validate-error-label {
 
 .service__title-h5 {
   font-size: 24px;
-}
-
-.service__content {
-  flex: 1;
 }
 
 .service__about {
@@ -4729,16 +4760,16 @@ label[for=user_name] > .just-validate-error-label {
 }
 
 .service__practice_slider {
-  width: 944px;
   overflow: hidden;
+}
+
+.service__practice_slider__item {
+  width: 100%;
+  max-width: 471px;
 }
 
 .service__thank {
   padding-top: 70px;
-}
-
-.service__thank .thank_slider__wrapper {
-  width: 942px;
 }
 
 .service__thank .service__thank_slider {
@@ -5898,6 +5929,19 @@ img {
     padding-bottom: 100px;
   }
 
+  .clients__slider .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    bottom: 30px;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .clients__slider .swiper-pagination .swiper-pagination-bullet {
+    border: 1px solid #9a211d;
+    border-radius: 25px;
+  }
+
   .clients__slide {
     background: #fff;
   }
@@ -6341,6 +6385,10 @@ img {
     max-height: 93px;
   }
 
+  .service__content {
+    max-width: 100%;
+  }
+
   .page__gradient-top {
     padding-top: 0;
     background: none;
@@ -6351,7 +6399,7 @@ img {
     display: block;
   }
 
-  .top {
+  .mob-none {
     display: none;
   }
 
@@ -7012,6 +7060,15 @@ img {
 
   .footer__copyright > p:not(:last-child) {
     margin-bottom: 5px;
+  }
+
+  .modal__thank__achievements .modal__thank_wrapper {
+    width: 100%;
+  }
+
+  .modal__thank_wrapper > .thank__slide_frame {
+    width: 100%;
+    height: 100%;
   }
 
   .achievements__wrapper {
@@ -8046,7 +8103,12 @@ img {
     max-height: 254px;
   }
 
+  .team-page .team__content_spec {
+    margin-top: 20px;
+  }
+
   .team-page .team__content_name {
+    margin-top: 8px;
     font-size: 20px;
   }
 
@@ -8054,7 +8116,12 @@ img {
     margin-top: 17px;
   }
 
+  .team-page .page__nav {
+    display: none;
+  }
+
   .thank-page__cards > .thank_slider_item {
+    width: 100% !important;
     padding-top: 0;
     margin-bottom: 37px;
   }
@@ -8086,13 +8153,17 @@ img {
     font-size: 10px;
   }
 
+  .persone__about_slider .thank_slider_item {
+    width: 100% !important;
+  }
+
   .page__title {
     width: 100%;
     max-width: unset;
   }
 
   .top {
-    padding: 42px 0 30px;
+    padding: 80px 0 30px;
   }
 
   .persone__about_wrapper {
@@ -8717,6 +8788,17 @@ img {
 
   .services-page__bottom .btn_plus {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 412px) {
+  .result__video {
+    width: 100%;
+  }
+
+  .college__history_year::before,
+  .college__history_year::after {
+    display: none;
   }
 }
 

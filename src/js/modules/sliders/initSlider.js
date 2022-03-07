@@ -9,7 +9,7 @@ const initSlider = (selector, prev, next, slidesPerView, slidesPerColumn = 1, pa
                 nextEl: next,
                 prevEl: prev,
             },
-            slidesPerView,
+            slidesPerView: slidesPerView,
             slidesPerColumn,
             pagination: {
                 el: '.swiper-pagination',

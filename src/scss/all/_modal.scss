@@ -8,22 +8,24 @@
     visibility: hidden;
     opacity: 0;
     &_wrapper {
-        width: 1366px;
         background: #F1EEEA;
         padding: 135px 50px 117px 50px;
         padding-top: 135px;
         padding-bottom: 117px;
+        width: 100%;
+        max-width: 1366px;
         display: flex;
         justify-content: space-between;
         position: relative;
     }
     &__form {
         &_wrapper {
-            width: 1366px;
             background: #F1EEEA;
             padding: 135px 50px 117px 50px;
             padding-top: 135px;
             padding-bottom: 117px;
+            width: 100%;
+            max-width: 1366px;
             display: flex;
             justify-content: space-between;
             position: relative;
@@ -39,6 +41,12 @@
         }  
     }
     &__thank {
+        &__achievements {
+            .modal__thank_wrapper {
+                width: auto;
+                background-color: transparent;
+            }
+        }
         &_wrapper {
             padding: 86px 158px;
             & > .thank__slide_frame {

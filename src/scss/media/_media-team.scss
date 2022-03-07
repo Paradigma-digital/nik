@@ -110,11 +110,18 @@
                     max-height: 254px;
                 }
             }
+            & .team__content_spec {
+                margin-top: 20px;
+            }
             & .team__content_name {
+                margin-top: 8px;
                 font-size: 20px;
             }
             & .team__content_list {
                 margin-top: 17px;
+            }
+            .page__nav {
+                display: none;
             }
         }
     }

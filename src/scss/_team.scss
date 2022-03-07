@@ -181,12 +181,16 @@
             display: flex;
             position: relative;
             align-items: flex-start;
+            
         }
         &__nav {
             position: sticky;
             top: 130px;
             height: auto;
             padding-bottom: 50px;
+            li {
+                margin-bottom: 10px;
+            }
         }
         &__cards {
             width: 100%;
@@ -194,7 +198,6 @@
         &__card {
             // align-items: flex-end;
             justify-content: flex-start;
-            max-height: 448px;
             max-width: unset;
             border-top: 1px solid $grey-ed;
             padding: 35px 0 50px;
